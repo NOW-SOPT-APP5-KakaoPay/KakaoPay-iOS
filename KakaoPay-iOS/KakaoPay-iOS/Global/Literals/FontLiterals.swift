@@ -9,9 +9,16 @@ import UIKit
 
 // 폰트 나오면 수정 
 enum FontName: String {
-    case suitExtraBold = "SUIT-ExtraBold"
-    case suitBold = "SUIT-Bold"
-    case suitSemiBold = "SUIT-SemiBold"
-    case suitMedium = "SUIT-Medium"
-    case suitRegular = "SUIT-Regular"
+    case appleRegular = "AppleSDGothicNeoR"
+    case appleSemiBold = "AppleSDGothicNeoSB"
+}
+
+extension UIFont {
+    @nonobjc class func appleRegular(size: CGFloat) -> UIFont {
+        return UIFont(name: FontName.appleRegular.rawValue, size: size)!
+    }
+    
+    @nonobjc class func appleSemiBold(size: CGFloat) -> UIFont {
+        return UIFont(name: FontName.appleSemiBold.rawValue, size: size)!
+    }
 }
