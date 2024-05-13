@@ -46,11 +46,11 @@ enum TabBarItem: CaseIterable {
     // 탭 별 제목
     var itemTitle: String? {
         switch self {
-        case .asset: return "자산"
-        case .benefit: return "혜택"
-        case .home: return "홈"
-        case .stock: return "주식"
-        case .all: return "전체"
+        case .asset: return StringLiterals.TabBar.asset
+        case .benefit: return StringLiterals.TabBar.benefit
+        case .home: return StringLiterals.TabBar.home
+        case .stock: return StringLiterals.TabBar.stock
+        case .all: return StringLiterals.TabBar.all
         }
     }
     
