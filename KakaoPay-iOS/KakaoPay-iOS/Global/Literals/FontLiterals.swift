@@ -9,8 +9,8 @@ import UIKit
 
 // 폰트 나오면 수정 
 enum FontName: String {
-    case appleRegular = "AppleSDGothicNeoR"
-    case appleSemiBold = "AppleSDGothicNeoSB"
+    case appleRegular = "AppleSDGothicNeo-Regular"
+    case appleSemiBold = "AppleSDGothicNeo-SemiBold"
 }
 
 extension UIFont {
