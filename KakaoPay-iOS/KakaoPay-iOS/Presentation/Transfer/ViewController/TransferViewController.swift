@@ -104,4 +104,9 @@ extension TransferViewController: UITableViewDataSource {
         return 38
     }
 }
-
+extension TransferViewController: UIScrollViewDelegate {
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        let navigationBarHidden = scrollView.contentOffset.y > 0
+        self.navigationController?.setNavigationBarHidden(navigationBarHidden, animated: false)
+    }
+}
