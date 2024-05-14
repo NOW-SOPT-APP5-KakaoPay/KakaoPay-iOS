@@ -22,13 +22,17 @@ final class MyAccountTableViewCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        setupStyle()
-        setupHierarchy()
-        setupLayout()
+        setView()
     }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
+    }
+    
+    func setView() {
+        setupStyle()
+        setupHierarchy()
+        setupLayout()
     }
 }
 
@@ -39,7 +43,7 @@ private extension MyAccountTableViewCell {
     func setupStyle() {
         addImage.image = .imgAddButton
         addAccountLabel.do {
-            $0.text = "계좌추가"
+            $0.text = StringLiterals.Transfer.addAccount
             $0.font = .appleSemiBold(size: 16)
             $0.textColor = .kakaoBlack
         }

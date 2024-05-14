@@ -18,35 +18,35 @@ final class MyAccountHeaderView: UITableViewHeaderFooterView {
     private let countLabel = UILabel()
     private let arrowButton = UIButton()
     
-
+    
     // MARK: - Life Cycle
     
     override init(reuseIdentifier: String?) {
-            super.init(reuseIdentifier: reuseIdentifier)
-            setView()
-        }
-        
-        required init?(coder: NSCoder) {
-            super.init(coder: coder)
-        }
+        super.init(reuseIdentifier: reuseIdentifier)
+        setView()
+    }
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+    }
     
     func setView() {
         setupStyle()
         setupHierarchy()
         setupLayout()
     }
-    
-    // MARK: - set up Style
-    
-    private func setupStyle() {
+}
+
+private extension MyAccountHeaderView {
+    func setupStyle() {
         myAccountLabel.do {
-            $0.text = "내 계좌"
+            $0.text = StringLiterals.Transfer.myAccount
             $0.font = .appleRegular(size: 13)
             $0.textColor = .kakaoBlack
         }
         
         countLabel.do {
-            $0.text = "+1개"
+            $0.text = StringLiterals.Transfer.countPlusOne
             $0.font = .appleRegular(size: 13)
             $0.textColor = .kakaoGray600
         }
@@ -56,15 +56,13 @@ final class MyAccountHeaderView: UITableViewHeaderFooterView {
         }
     }
     
-    // MARK: - set up Hierarchy
-    
-    private func setupHierarchy() {
-       addSubviews(myAccountLabel, countLabel, arrowButton)
+    func setupHierarchy() {
+        addSubviews(myAccountLabel, 
+                    countLabel,
+                    arrowButton)
     }
     
-    // MARK: - set up Layout
-    
-    private func setupLayout() {
+    func setupLayout() {
         myAccountLabel.snp.makeConstraints {
             $0.top.equalToSuperview().inset(8)
             $0.leading.equalToSuperview().inset(22)

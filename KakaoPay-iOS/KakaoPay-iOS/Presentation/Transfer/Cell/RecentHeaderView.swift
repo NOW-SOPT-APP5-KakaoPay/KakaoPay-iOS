@@ -16,11 +16,11 @@ final class RecentHeaderView: UITableViewHeaderFooterView {
     
     private let recentLabel = UILabel()
     
-    
     // MARK: - Life Cycle
     
     override init(reuseIdentifier: String?) {
         super.init(reuseIdentifier: reuseIdentifier)
+        
         setView()
     }
     
@@ -33,26 +33,22 @@ final class RecentHeaderView: UITableViewHeaderFooterView {
         setupHierarchy()
         setupLayout()
     }
-    
-    // MARK: - set up Style
-    
-    private func setupStyle() {
+}
+
+private extension RecentHeaderView {
+    func setupStyle() {
         recentLabel.do {
-            $0.text = "최근"
+            $0.text = StringLiterals.Transfer.recent
             $0.font = .appleRegular(size: 13)
             $0.textColor = .kakaoBlack
         }
     }
     
-    // MARK: - set up Hierarchy
-    
-    private func setupHierarchy() {
+    func setupHierarchy() {
         addSubview(recentLabel)
     }
     
-    // MARK: - set up Layout
-    
-    private func setupLayout() {
+    func setupLayout() {
         recentLabel.snp.makeConstraints {
             $0.top.equalToSuperview().inset(10)
             $0.leading.equalToSuperview().inset(22)
