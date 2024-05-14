@@ -34,6 +34,8 @@
 		83474AD72BEE69E0009B9C48 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 83474AD62BEE69E0009B9C48 /* Kingfisher */; };
 		8360DA682BF10A64002CABBC /* AppleSDGothicNeoSB.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8360DA642BF10A64002CABBC /* AppleSDGothicNeoSB.ttf */; };
 		8360DA6A2BF10A64002CABBC /* AppleSDGothicNeoR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8360DA662BF10A64002CABBC /* AppleSDGothicNeoR.ttf */; };
+		8360DA6D2BF1CBD5002CABBC /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA6C2BF1CBD5002CABBC /* TabBarItem.swift */; };
+		8360DA6F2BF1D3EA002CABBC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA6E2BF1D3EA002CABBC /* TabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,8 @@
 		83474ACA2BEE68FC009B9C48 /* UIImageView+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+.swift"; sourceTree = "<group>"; };
 		8360DA642BF10A64002CABBC /* AppleSDGothicNeoSB.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleSDGothicNeoSB.ttf; sourceTree = "<group>"; };
 		8360DA662BF10A64002CABBC /* AppleSDGothicNeoR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleSDGothicNeoR.ttf; sourceTree = "<group>"; };
+		8360DA6C2BF1CBD5002CABBC /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		8360DA6E2BF1D3EA002CABBC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +113,7 @@
 		83474A8F2BEE62C1009B9C48 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				8360DA6B2BF1CBCA002CABBC /* TabBar */,
 				83474A932BEE62EA009B9C48 /* Home */,
 				83474A7E2BEE6160009B9C48 /* ViewController.swift */,
 			);
@@ -262,6 +267,15 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		8360DA6B2BF1CBCA002CABBC /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				8360DA6C2BF1CBD5002CABBC /* TabBarItem.swift */,
+				8360DA6E2BF1D3EA002CABBC /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -358,11 +372,13 @@
 				83474ABB2BEE677C009B9C48 /* FontLiterals.swift in Sources */,
 				83474AC12BEE684A009B9C48 /* UIView+.swift in Sources */,
 				83474AC52BEE688E009B9C48 /* NSObject+.swift in Sources */,
+				8360DA6F2BF1D3EA002CABBC /* TabBarController.swift in Sources */,
 				83474AC32BEE6878009B9C48 /* UIViewController+.swift in Sources */,
 				83474ABF2BEE6824009B9C48 /* UITextField+.swift in Sources */,
 				83474A992BEE6326009B9C48 /* HomeView.swift in Sources */,
 				83474ACB2BEE68FC009B9C48 /* UIImageView+.swift in Sources */,
 				83474ABD2BEE6815009B9C48 /* UIStackView+.swift in Sources */,
+				8360DA6D2BF1CBD5002CABBC /* TabBarItem.swift in Sources */,
 				83474A7B2BEE6160009B9C48 /* AppDelegate.swift in Sources */,
 				83474A7D2BEE6160009B9C48 /* SceneDelegate.swift in Sources */,
 			);
