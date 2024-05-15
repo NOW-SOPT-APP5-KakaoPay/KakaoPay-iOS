@@ -36,6 +36,14 @@
 		8360DA6A2BF10A64002CABBC /* AppleSDGothicNeoR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8360DA662BF10A64002CABBC /* AppleSDGothicNeoR.ttf */; };
 		8360DA6D2BF1CBD5002CABBC /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA6C2BF1CBD5002CABBC /* TabBarItem.swift */; };
 		8360DA6F2BF1D3EA002CABBC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA6E2BF1D3EA002CABBC /* TabBarController.swift */; };
+		D083F05C2BF546F800128DA1 /* TotalMoneyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F05B2BF546F800128DA1 /* TotalMoneyCell.swift */; };
+		D083F05E2BF5486600128DA1 /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F05D2BF5486600128DA1 /* AssetViewController.swift */; };
+		D083F0602BF5488C00128DA1 /* AssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F05F2BF5488C00128DA1 /* AssetView.swift */; };
+		D083F0652BF54ADC00128DA1 /* AccontCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0642BF54ADC00128DA1 /* AccontCell.swift */; };
+		D083F0672BF54FC900128DA1 /* AccountHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0662BF54FC900128DA1 /* AccountHeaderView.swift */; };
+		D083F0692BF5518E00128DA1 /* AccountFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0682BF5518E00128DA1 /* AccountFooterView.swift */; };
+		D083F06B2BF557BC00128DA1 /* MoreViewButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F06A2BF557BC00128DA1 /* MoreViewButton.swift */; };
+		D083F06F2BF558F600128DA1 /* CompositionalFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F06E2BF558F600128DA1 /* CompositionalFactory.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +74,14 @@
 		8360DA662BF10A64002CABBC /* AppleSDGothicNeoR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleSDGothicNeoR.ttf; sourceTree = "<group>"; };
 		8360DA6C2BF1CBD5002CABBC /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		8360DA6E2BF1D3EA002CABBC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		D083F05B2BF546F800128DA1 /* TotalMoneyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalMoneyCell.swift; sourceTree = "<group>"; };
+		D083F05D2BF5486600128DA1 /* AssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
+		D083F05F2BF5488C00128DA1 /* AssetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetView.swift; sourceTree = "<group>"; };
+		D083F0642BF54ADC00128DA1 /* AccontCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccontCell.swift; sourceTree = "<group>"; };
+		D083F0662BF54FC900128DA1 /* AccountHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHeaderView.swift; sourceTree = "<group>"; };
+		D083F0682BF5518E00128DA1 /* AccountFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountFooterView.swift; sourceTree = "<group>"; };
+		D083F06A2BF557BC00128DA1 /* MoreViewButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreViewButton.swift; sourceTree = "<group>"; };
+		D083F06E2BF558F600128DA1 /* CompositionalFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalFactory.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +131,7 @@
 			children = (
 				8360DA6B2BF1CBCA002CABBC /* TabBar */,
 				83474A932BEE62EA009B9C48 /* Home */,
+				D083F0562BF5467700128DA1 /* Asset */,
 				83474A7E2BEE6160009B9C48 /* ViewController.swift */,
 			);
 			path = Presentation;
@@ -276,6 +293,54 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		D083F0562BF5467700128DA1 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				D083F06C2BF5586700128DA1 /* Component */,
+				D083F05A2BF546D900128DA1 /* Model */,
+				D083F0592BF546D500128DA1 /* View */,
+				D083F0582BF546CB00128DA1 /* ViewController */,
+				D083F0572BF5469300128DA1 /* Cell */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		D083F0572BF5469300128DA1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D083F05B2BF546F800128DA1 /* TotalMoneyCell.swift */,
+				D083F0642BF54ADC00128DA1 /* AccontCell.swift */,
+				D083F0662BF54FC900128DA1 /* AccountHeaderView.swift */,
+				D083F0682BF5518E00128DA1 /* AccountFooterView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D083F0582BF546CB00128DA1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D083F05D2BF5486600128DA1 /* AssetViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D083F0592BF546D500128DA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D083F05F2BF5488C00128DA1 /* AssetView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D083F06C2BF5586700128DA1 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				D083F06E2BF558F600128DA1 /* CompositionalFactory.swift */,
+				D083F06A2BF557BC00128DA1 /* MoreViewButton.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -369,14 +434,22 @@
 				83474AAF2BEE6631009B9C48 /* NetworkResult.swift in Sources */,
 				83474A7F2BEE6160009B9C48 /* ViewController.swift in Sources */,
 				83474AAA2BEE65B5009B9C48 /* HomeAPIService.swift in Sources */,
+				D083F0692BF5518E00128DA1 /* AccountFooterView.swift in Sources */,
 				83474ABB2BEE677C009B9C48 /* FontLiterals.swift in Sources */,
 				83474AC12BEE684A009B9C48 /* UIView+.swift in Sources */,
+				D083F0672BF54FC900128DA1 /* AccountHeaderView.swift in Sources */,
 				83474AC52BEE688E009B9C48 /* NSObject+.swift in Sources */,
 				8360DA6F2BF1D3EA002CABBC /* TabBarController.swift in Sources */,
+				D083F0602BF5488C00128DA1 /* AssetView.swift in Sources */,
 				83474AC32BEE6878009B9C48 /* UIViewController+.swift in Sources */,
 				83474ABF2BEE6824009B9C48 /* UITextField+.swift in Sources */,
+				D083F06F2BF558F600128DA1 /* CompositionalFactory.swift in Sources */,
+				D083F06B2BF557BC00128DA1 /* MoreViewButton.swift in Sources */,
 				83474A992BEE6326009B9C48 /* HomeView.swift in Sources */,
 				83474ACB2BEE68FC009B9C48 /* UIImageView+.swift in Sources */,
+				D083F05C2BF546F800128DA1 /* TotalMoneyCell.swift in Sources */,
+				D083F0652BF54ADC00128DA1 /* AccontCell.swift in Sources */,
+				D083F05E2BF5486600128DA1 /* AssetViewController.swift in Sources */,
 				83474ABD2BEE6815009B9C48 /* UIStackView+.swift in Sources */,
 				8360DA6D2BF1CBD5002CABBC /* TabBarItem.swift in Sources */,
 				83474A7B2BEE6160009B9C48 /* AppDelegate.swift in Sources */,
