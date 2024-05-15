@@ -100,4 +100,10 @@ extension TotalMoneyCell {
             $0.trailing.equalToSuperview().inset(15)
         }
     }
+    
+    //MARK: - Method
+    
+    func bindData(_ data: TotalMoneyModel) {
+        moneyLabel.text = data.totalMoney
+    }
 }

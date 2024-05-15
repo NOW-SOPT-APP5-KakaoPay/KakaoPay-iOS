@@ -12,6 +12,8 @@ final class AssetViewController: UIViewController {
     // MARK: - Properties
     
     private let rootView = AssetView()
+    
+    private let totalMoneyoneyData = TotalMoneyModel.dummy()
 
     // MARK: - Life Cycles
 
@@ -56,6 +58,7 @@ extension AssetViewController: UICollectionViewDataSource {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TotalMoneyCell.className, for: indexPath) as? TotalMoneyCell else {
                 return UICollectionViewCell()
             }
+            cell.bindData(totalMoneyoneyData)
             return cell
         case 1:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AccontCell.className, for: indexPath) as? AccontCell else {

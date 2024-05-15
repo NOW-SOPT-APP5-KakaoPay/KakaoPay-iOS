@@ -39,6 +39,7 @@
 		D083F05C2BF546F800128DA1 /* TotalMoneyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F05B2BF546F800128DA1 /* TotalMoneyCell.swift */; };
 		D083F05E2BF5486600128DA1 /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F05D2BF5486600128DA1 /* AssetViewController.swift */; };
 		D083F0602BF5488C00128DA1 /* AssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F05F2BF5488C00128DA1 /* AssetView.swift */; };
+		D083F0632BF548AB00128DA1 /* TotalMoneyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0622BF548AB00128DA1 /* TotalMoneyModel.swift */; };
 		D083F0652BF54ADC00128DA1 /* AccontCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0642BF54ADC00128DA1 /* AccontCell.swift */; };
 		D083F0672BF54FC900128DA1 /* AccountHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0662BF54FC900128DA1 /* AccountHeaderView.swift */; };
 		D083F0692BF5518E00128DA1 /* AccountFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0682BF5518E00128DA1 /* AccountFooterView.swift */; };
@@ -77,6 +78,7 @@
 		D083F05B2BF546F800128DA1 /* TotalMoneyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalMoneyCell.swift; sourceTree = "<group>"; };
 		D083F05D2BF5486600128DA1 /* AssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
 		D083F05F2BF5488C00128DA1 /* AssetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetView.swift; sourceTree = "<group>"; };
+		D083F0622BF548AB00128DA1 /* TotalMoneyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalMoneyModel.swift; sourceTree = "<group>"; };
 		D083F0642BF54ADC00128DA1 /* AccontCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccontCell.swift; sourceTree = "<group>"; };
 		D083F0662BF54FC900128DA1 /* AccountHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountHeaderView.swift; sourceTree = "<group>"; };
 		D083F0682BF5518E00128DA1 /* AccountFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountFooterView.swift; sourceTree = "<group>"; };
@@ -332,6 +334,14 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		D083F05A2BF546D900128DA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D083F0622BF548AB00128DA1 /* TotalMoneyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		D083F06C2BF5586700128DA1 /* Component */ = {
 			isa = PBXGroup;
 			children = (
@@ -448,6 +458,7 @@
 				83474A992BEE6326009B9C48 /* HomeView.swift in Sources */,
 				83474ACB2BEE68FC009B9C48 /* UIImageView+.swift in Sources */,
 				D083F05C2BF546F800128DA1 /* TotalMoneyCell.swift in Sources */,
+				D083F0632BF548AB00128DA1 /* TotalMoneyModel.swift in Sources */,
 				D083F0652BF54ADC00128DA1 /* AccontCell.swift in Sources */,
 				D083F05E2BF5486600128DA1 /* AssetViewController.swift in Sources */,
 				83474ABD2BEE6815009B9C48 /* UIStackView+.swift in Sources */,
