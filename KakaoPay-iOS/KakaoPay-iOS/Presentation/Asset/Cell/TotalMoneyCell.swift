@@ -37,6 +37,9 @@ final class TotalMoneyCell: UICollectionViewCell {
 // MARK: - Extensions
 
 extension TotalMoneyCell {
+    
+    //MARK: - Private Method
+
     private func setupStyle() {
         backgroundColor = .kakaoYellow
         makeRounded(radius: 15)

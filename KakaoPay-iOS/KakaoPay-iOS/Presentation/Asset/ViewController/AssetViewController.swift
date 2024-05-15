@@ -27,6 +27,9 @@ final class AssetViewController: UIViewController {
 }
 
 extension AssetViewController {
+    
+    //MARK: - Private Method
+
     private func setupDelegate() {
         rootView.setupCollectionView(self)
     }

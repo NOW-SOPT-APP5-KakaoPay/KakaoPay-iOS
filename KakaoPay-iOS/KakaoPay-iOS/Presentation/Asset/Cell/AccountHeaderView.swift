@@ -33,6 +33,9 @@ final class AccountHeaderView: UICollectionReusableView {
 }
 
 extension AccountHeaderView {
+    
+    //MARK: - Private Method
+
     private func setupStyle() {
         backgroundColor = .kakaoWhite
         makeRounded(radius: 15)

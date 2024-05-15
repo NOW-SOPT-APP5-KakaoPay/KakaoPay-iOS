@@ -39,6 +39,9 @@ final class AccontCell: UICollectionViewCell {
 // MARK: - Extensions
 
 extension AccontCell {
+    
+    //MARK: - Private Method
+
     private func setupStyle() {
         backgroundColor = .kakaoWhite
         

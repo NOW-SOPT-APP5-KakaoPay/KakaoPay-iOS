@@ -36,6 +36,9 @@ final class AccountFooterView: UICollectionReusableView {
 // MARK: - Extensions
 
 extension AccountFooterView {
+    
+    //MARK: - Private Method
+
     private func setupStyle() {
         backgroundColor = .kakaoWhite
         makeRounded(radius: 15)
