@@ -33,6 +33,10 @@ final class investmentAndLoanCell: UICollectionViewCell {
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
+    
+    override func layoutSubviews() {
+        layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+    }
 }
 
 // MARK: - Extensions
@@ -43,9 +47,8 @@ extension investmentAndLoanCell {
     
     private func setupStyle() {
         backgroundColor = .kakaoWhite
-        self.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
         makeRounded(radius: 15)
-
+        
         innerView.do {
             $0.backgroundColor = .kakaoGray200
             $0.makeRounded(radius: 10)
