@@ -48,6 +48,8 @@
 		D083F0712BF57A7E00128DA1 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0702BF57A7E00128DA1 /* NewsCell.swift */; };
 		D083F0732BF5854900128DA1 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0722BF5854900128DA1 /* NewsModel.swift */; };
 		D083F0752BF5F86200128DA1 /* SpendingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0742BF5F86200128DA1 /* SpendingCell.swift */; };
+		D083F0772BF6481800128DA1 /* investmentAndLoanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0762BF6481800128DA1 /* investmentAndLoanCell.swift */; };
+		D083F0792BF64D5E00128DA1 /* InvestmentAndLoanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0782BF64D5E00128DA1 /* InvestmentAndLoanModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -90,6 +92,8 @@
 		D083F0702BF57A7E00128DA1 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
 		D083F0722BF5854900128DA1 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
 		D083F0742BF5F86200128DA1 /* SpendingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingCell.swift; sourceTree = "<group>"; };
+		D083F0762BF6481800128DA1 /* investmentAndLoanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = investmentAndLoanCell.swift; sourceTree = "<group>"; };
+		D083F0782BF64D5E00128DA1 /* InvestmentAndLoanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentAndLoanModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -322,6 +326,7 @@
 				D083F0682BF5518E00128DA1 /* AccountFooterView.swift */,
 				D083F0702BF57A7E00128DA1 /* NewsCell.swift */,
 				D083F0742BF5F86200128DA1 /* SpendingCell.swift */,
+				D083F0762BF6481800128DA1 /* investmentAndLoanCell.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -347,6 +352,7 @@
 			children = (
 				D083F0622BF548AB00128DA1 /* TotalMoneyModel.swift */,
 				D083F0722BF5854900128DA1 /* NewsModel.swift */,
+				D083F0782BF64D5E00128DA1 /* InvestmentAndLoanModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -473,9 +479,11 @@
 				D083F0652BF54ADC00128DA1 /* AccontCell.swift in Sources */,
 				D083F05E2BF5486600128DA1 /* AssetViewController.swift in Sources */,
 				83474ABD2BEE6815009B9C48 /* UIStackView+.swift in Sources */,
+				D083F0772BF6481800128DA1 /* investmentAndLoanCell.swift in Sources */,
 				8360DA6D2BF1CBD5002CABBC /* TabBarItem.swift in Sources */,
 				83474A7B2BEE6160009B9C48 /* AppDelegate.swift in Sources */,
 				83474A7D2BEE6160009B9C48 /* SceneDelegate.swift in Sources */,
+				D083F0792BF64D5E00128DA1 /* InvestmentAndLoanModel.swift in Sources */,
 				D083F0752BF5F86200128DA1 /* SpendingCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -609,7 +617,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KT2Q6HC762;
+				DEVELOPMENT_TEAM = X395BM5WW7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "KakaoPay-iOS/Global/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -636,7 +644,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KT2Q6HC762;
+				DEVELOPMENT_TEAM = X395BM5WW7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "KakaoPay-iOS/Global/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;

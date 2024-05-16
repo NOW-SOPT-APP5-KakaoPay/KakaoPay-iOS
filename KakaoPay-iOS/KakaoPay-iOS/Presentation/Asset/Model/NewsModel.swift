@@ -15,6 +15,10 @@ struct NewsModel {
 
 extension NewsModel {
     static func dummy() -> [NewsModel] {
-        return [NewsModel(image: UIImage(resource: .imgChoonsik), discription: "이가인님 소식", main: "1개 발견"), NewsModel(image: UIImage(resource: .imgCalendar), discription: "2일 후", main: "카드값 내는 날"), NewsModel(image: UIImage(resource: .imgCreditscore), discription: "신용점수", main: "NICE 894")]
+        return [
+            NewsModel(image: UIImage(resource: .imgChoonsik), discription: "이가인님 소식", main: "1개 발견"),
+            NewsModel(image: UIImage(resource: .imgCalendar), discription: "2일 후", main: "카드값 내는 날"),
+            NewsModel(image: UIImage(resource: .imgCreditscore), discription: "신용점수", main: "NICE 894")
+        ]
     }
 }

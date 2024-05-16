@@ -15,6 +15,7 @@ final class AssetViewController: UIViewController {
     
     private let totalMoneyModelData = TotalMoneyModel.dummy()
     private let newsModelDateList = NewsModel.dummy()
+    private let investmentAndLoanDataList = InvestmentAndLoanModel.dummy()
 
     // MARK: - Life Cycles
 
@@ -40,12 +41,12 @@ extension AssetViewController {
 
 extension AssetViewController: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 4
+        return 6
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch section {
-        case 0, 1, 3:
+        case 0, 1, 3, 4, 5:
             return 1
         case 2:
             return 3
@@ -77,6 +78,18 @@ extension AssetViewController: UICollectionViewDataSource {
                 return UICollectionViewCell()
             }
             return cell
+        case 4:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: investmentAndLoanCell.className, for: indexPath) as? investmentAndLoanCell else {
+                return UICollectionViewCell()
+            }
+            cell.configureCellWithHightlightText(data: investmentAndLoanDataList[0], hightlightText: "5개")
+            return cell
+        case 5:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: investmentAndLoanCell.className, for: indexPath) as? investmentAndLoanCell else {
+                return UICollectionViewCell()
+            }
+            cell.configureCell(data: investmentAndLoanDataList[1])
+            return cell
         default: return UICollectionViewCell()
         }
     }
@@ -98,6 +111,18 @@ extension AssetViewController: UICollectionViewDataSource {
             } else {
                 return UICollectionReusableView()
             }
+        case 4:
+            guard let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: MoneyHeaderView.className, for: indexPath) as? MoneyHeaderView else {
+                return UICollectionReusableView()
+            }
+            headerView.configureBlackTitleHeader(forTitle: "투자한 돈")
+            return headerView
+        case 5:
+            guard let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: MoneyHeaderView.className, for: indexPath) as? MoneyHeaderView else {
+                return UICollectionReusableView()
+            }
+            headerView.configureBlackTitleHeader(forTitle: "빌린 돈")
+            return headerView
         default: return UICollectionReusableView()
         }
     }
