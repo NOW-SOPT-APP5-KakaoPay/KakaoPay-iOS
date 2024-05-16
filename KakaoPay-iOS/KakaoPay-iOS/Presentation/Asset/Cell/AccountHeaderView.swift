@@ -15,7 +15,7 @@ final class AccountHeaderView: UICollectionReusableView {
     // MARK: - UIComponent
 
     private let accountLabel = UILabel()
-    private let moreViewButton = MoreViewButton()
+    private let moreView = MoreView()
 
     // MARK: - Life Cycle
 
@@ -50,7 +50,7 @@ extension AccountHeaderView {
     }
 
     private func setupHierarchy() {
-        addSubviews(accountLabel, moreViewButton)
+        addSubviews(accountLabel, moreView)
     }
 
     private func setupLayout() {
@@ -59,10 +59,10 @@ extension AccountHeaderView {
             $0.leading.equalToSuperview().inset(20)
         }
         
-        moreViewButton.snp.makeConstraints {
+        moreView.snp.makeConstraints {
             $0.centerY.equalTo(accountLabel.snp.centerY)
-            $0.trailing.equalToSuperview().inset(43)
-            $0.width.equalTo(42)
+            $0.trailing.equalToSuperview().inset(18)
+            $0.width.equalTo(55)
             $0.height.equalTo(19)
         }
     }
