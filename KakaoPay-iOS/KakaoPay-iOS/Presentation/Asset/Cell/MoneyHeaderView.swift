@@ -1,5 +1,5 @@
 //
-//  AccountHeaderView.swift
+//  MoneyHeaderView.swift
 //  KakaoPay-iOS
 //
 //  Created by 조혜린 on 5/16/24.
@@ -10,11 +10,11 @@ import UIKit
 import SnapKit
 import Then
 
-final class AccountHeaderView: UICollectionReusableView {
+final class MoneyHeaderView: UICollectionReusableView {
 
     // MARK: - UIComponent
 
-    private let accountLabel = UILabel()
+    private let titleLabel = UILabel()
     private let moreView = MoreView()
 
     // MARK: - Life Cycle
@@ -32,7 +32,7 @@ final class AccountHeaderView: UICollectionReusableView {
     }
 }
 
-extension AccountHeaderView {
+extension MoneyHeaderView {
     
     //MARK: - Private Method
 
@@ -41,29 +41,39 @@ extension AccountHeaderView {
         makeRounded(radius: 15)
         layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
         
-        accountLabel.do {
-            $0.text = "계좌"
+        titleLabel.do {
             $0.font = .appleSemiBold(size: 20)
-            $0.textColor = .kakaoBlack
             $0.textAlignment = .center
         }
     }
 
     private func setupHierarchy() {
-        addSubviews(accountLabel, moreView)
+        addSubviews(titleLabel, moreView)
     }
 
     private func setupLayout() {
-        accountLabel.snp.makeConstraints {
+        titleLabel.snp.makeConstraints {
             $0.top.equalToSuperview().inset(24)
             $0.leading.equalToSuperview().inset(20)
         }
         
         moreView.snp.makeConstraints {
-            $0.centerY.equalTo(accountLabel.snp.centerY)
+            $0.centerY.equalTo(titleLabel.snp.centerY)
             $0.trailing.equalToSuperview().inset(18)
             $0.width.equalTo(55)
             $0.height.equalTo(19)
         }
+    }
+    
+    //MARK: - Method
+    
+    func configureGrayTitleHeader(forTitle: String) {
+        titleLabel.text = forTitle
+        titleLabel.textColor = .kakaoGray600
+    }
+    
+    func configureBlackTitleHeader(forTitle: String) {
+        titleLabel.text = forTitle
+        titleLabel.textColor = .kakaoBlack
     }
 }

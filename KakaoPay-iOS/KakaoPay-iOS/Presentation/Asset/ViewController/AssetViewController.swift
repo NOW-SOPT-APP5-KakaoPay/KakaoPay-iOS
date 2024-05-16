@@ -85,9 +85,10 @@ extension AssetViewController: UICollectionViewDataSource {
         switch indexPath.section {
         case 1:
             if kind == UICollectionView.elementKindSectionHeader {
-                guard let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: AccountHeaderView.className, for: indexPath) as? AccountHeaderView else {
+                guard let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: MoneyHeaderView.className, for: indexPath) as? MoneyHeaderView else {
                     return UICollectionReusableView()
                 }
+                headerView.configureGrayTitleHeader(forTitle: "계좌")
                 return headerView
             } else if kind == UICollectionView.elementKindSectionFooter {
                 guard let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: AccountFooterView.className, for: indexPath) as? AccountFooterView else {
