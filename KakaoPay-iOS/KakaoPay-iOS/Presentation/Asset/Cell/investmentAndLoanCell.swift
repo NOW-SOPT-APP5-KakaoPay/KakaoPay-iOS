@@ -97,7 +97,7 @@ extension investmentAndLoanCell {
     
     //MARK: - Method
     
-    func configureCell(data: InvestmentAndLoanModel) {
+    func configureCell(_ data: InvestmentAndLoanModel) {
         imageView.image = data.image
         titleLabel.text = data.title
         discriptionLabel.text = data.discription

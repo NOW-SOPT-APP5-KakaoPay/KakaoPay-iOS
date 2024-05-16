@@ -15,7 +15,8 @@ final class AssetViewController: UIViewController {
     
     private let totalMoneyModelData = TotalMoneyModel.dummy()
     private let newsModelDateList = NewsModel.dummy()
-    private let investmentAndLoanDataList = InvestmentAndLoanModel.dummy()
+    private let investmentAndLoanModelDataList = InvestmentAndLoanModel.dummy()
+    private let payIssueModelDateList = PayIssueModel.dummy()
 
     // MARK: - Life Cycles
 
@@ -41,7 +42,7 @@ extension AssetViewController {
 
 extension AssetViewController: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 6
+        return 7
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -50,6 +51,8 @@ extension AssetViewController: UICollectionViewDataSource {
             return 1
         case 2:
             return 3
+        case 6:
+            return 4
         default: return 0
         }
     }
@@ -82,13 +85,19 @@ extension AssetViewController: UICollectionViewDataSource {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: investmentAndLoanCell.className, for: indexPath) as? investmentAndLoanCell else {
                 return UICollectionViewCell()
             }
-            cell.configureCellWithHightlightText(data: investmentAndLoanDataList[0], hightlightText: "5개")
+            cell.configureCellWithHightlightText(data: investmentAndLoanModelDataList[0], hightlightText: "5개")
             return cell
         case 5:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: investmentAndLoanCell.className, for: indexPath) as? investmentAndLoanCell else {
                 return UICollectionViewCell()
             }
-            cell.configureCell(data: investmentAndLoanDataList[1])
+            cell.configureCell(investmentAndLoanModelDataList[1])
+            return cell
+        case 6:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PayIssueCell.className, for: indexPath) as? PayIssueCell else {
+                return UICollectionViewCell()
+            }
+            cell.configureCell(payIssueModelDateList[indexPath.item])
             return cell
         default: return UICollectionViewCell()
         }

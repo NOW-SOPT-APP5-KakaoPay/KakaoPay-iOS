@@ -19,10 +19,10 @@ enum CompositionalFactory {
                 return createNewsLayout()
             case 3:
                 return createSpendingLayout()
-            case 4, 5:
-                return createInvestAndLoanLayout()
+            case 6:
+                return createPayIssueLayout()
             default:
-                return createDefaultLayout()
+                return createInvestAndLoanLayout()
             }
         }
         return layout
@@ -108,15 +108,18 @@ enum CompositionalFactory {
         return section
     }
     
-    static func createDefaultLayout() -> NSCollectionLayoutSection {
-        
-        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
+    static func createPayIssueLayout() -> NSCollectionLayoutSection {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .absolute(146), heightDimension: .absolute(172))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .fractionalHeight(1.0))
-        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        let groupSize = NSCollectionLayoutSize(widthDimension: .estimated(1.0), heightDimension: .absolute(172))
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, repeatingSubitem: item, count: 4)
+        group.interItemSpacing = .fixed(11)
         
         let section = NSCollectionLayoutSection(group: group)
+        section.orthogonalScrollingBehavior = .groupPaging
+        section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15)
+        
         return section
     }
 }

@@ -54,6 +54,7 @@ extension AssetView {
             $0.register(NewsCell.self, forCellWithReuseIdentifier: NewsCell.className)
             $0.register(SpendingCell.self, forCellWithReuseIdentifier: SpendingCell.className)
             $0.register(investmentAndLoanCell.self, forCellWithReuseIdentifier: investmentAndLoanCell.className)
+            $0.register(PayIssueCell.self, forCellWithReuseIdentifier: PayIssueCell.className)
         }
     }
     
