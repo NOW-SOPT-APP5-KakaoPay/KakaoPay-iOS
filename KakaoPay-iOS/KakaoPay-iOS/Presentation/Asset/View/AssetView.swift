@@ -52,6 +52,7 @@ extension AssetView {
             $0.register(AccountHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier:AccountHeaderView.className)
             $0.register(AccountFooterView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: AccountFooterView.className)
             $0.register(NewsCell.self, forCellWithReuseIdentifier: NewsCell.className)
+            $0.register(SpendingCell.self, forCellWithReuseIdentifier: SpendingCell.className)
         }
     }
     

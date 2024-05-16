@@ -40,12 +40,12 @@ extension AssetViewController {
 
 extension AssetViewController: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 3
+        return 4
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch section {
-        case 0, 1:
+        case 0, 1, 3:
             return 1
         case 2:
             return 3
@@ -71,6 +71,11 @@ extension AssetViewController: UICollectionViewDataSource {
                 return UICollectionViewCell()
             }
             cell.configureCell(newsModelDateList[indexPath.item])
+            return cell
+        case 3:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SpendingCell.className, for: indexPath) as? SpendingCell else {
+                return UICollectionViewCell()
+            }
             return cell
         default: return UICollectionViewCell()
         }

@@ -17,6 +17,8 @@ enum CompositionalFactory {
                 return createAccountLayout()
             case 2:
                 return createNewsLayout()
+            case 3:
+                return createSpendingLayout()
             default:
                 return createDefaultLayout()
             }
@@ -68,6 +70,19 @@ enum CompositionalFactory {
         
         let section = NSCollectionLayoutSection(group: group)
         section.orthogonalScrollingBehavior = .groupPaging
+        section.contentInsets = NSDirectionalEdgeInsets(top: 12, leading: 15, bottom: 0, trailing: 15)
+        
+        return section
+    }
+    
+    static func createSpendingLayout() -> NSCollectionLayoutSection {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(202))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        
+        let groupSize = itemSize
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
+        
+        let section = NSCollectionLayoutSection(group: group)
         section.contentInsets = NSDirectionalEdgeInsets(top: 12, leading: 15, bottom: 0, trailing: 15)
         
         return section
