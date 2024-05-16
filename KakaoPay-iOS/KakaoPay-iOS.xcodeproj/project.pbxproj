@@ -44,6 +44,11 @@
 		8360DA852BF22D6F002CABBC /* MyAccountHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA842BF22D6F002CABBC /* MyAccountHeaderView.swift */; };
 		8360DA872BF22D7B002CABBC /* RecentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA862BF22D7B002CABBC /* RecentHeaderView.swift */; };
 		8360DA8A2BF25FF3002CABBC /* TransferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA892BF25FF3002CABBC /* TransferModel.swift */; };
+		8360DA902BF3C2BA002CABBC /* PaymentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA8F2BF3C2BA002CABBC /* PaymentModel.swift */; };
+		8360DA922BF3C2C4002CABBC /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA912BF3C2C4002CABBC /* PaymentView.swift */; };
+		8360DA942BF3C2CE002CABBC /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA932BF3C2CE002CABBC /* PaymentViewController.swift */; };
+		83E327C12BF5CFA400C7891C /* CustomDivideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E327C02BF5CFA400C7891C /* CustomDivideView.swift */; };
+		83FA54422BF5200000F4C1CC /* BarcodePaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA54412BF5200000F4C1CC /* BarcodePaymentView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,6 +87,11 @@
 		8360DA842BF22D6F002CABBC /* MyAccountHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountHeaderView.swift; sourceTree = "<group>"; };
 		8360DA862BF22D7B002CABBC /* RecentHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentHeaderView.swift; sourceTree = "<group>"; };
 		8360DA892BF25FF3002CABBC /* TransferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferModel.swift; sourceTree = "<group>"; };
+		8360DA8F2BF3C2BA002CABBC /* PaymentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentModel.swift; sourceTree = "<group>"; };
+		8360DA912BF3C2C4002CABBC /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
+		8360DA932BF3C2CE002CABBC /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		83E327C02BF5CFA400C7891C /* CustomDivideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivideView.swift; sourceTree = "<group>"; };
+		83FA54412BF5200000F4C1CC /* BarcodePaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodePaymentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +139,7 @@
 		83474A8F2BEE62C1009B9C48 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				8360DA8B2BF3C248002CABBC /* Payment */,
 				8360DA702BF220E0002CABBC /* Transfer */,
 				8360DA6B2BF1CBCA002CABBC /* TabBar */,
 				83474A932BEE62EA009B9C48 /* Home */,
@@ -340,6 +351,42 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		8360DA8B2BF3C248002CABBC /* Payment */ = {
+			isa = PBXGroup;
+			children = (
+				8360DA8E2BF3C29D002CABBC /* Model */,
+				8360DA8D2BF3C295002CABBC /* View */,
+				8360DA8C2BF3C278002CABBC /* ViewController */,
+			);
+			path = Payment;
+			sourceTree = "<group>";
+		};
+		8360DA8C2BF3C278002CABBC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8360DA932BF3C2CE002CABBC /* PaymentViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8360DA8D2BF3C295002CABBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8360DA912BF3C2C4002CABBC /* PaymentView.swift */,
+				83FA54412BF5200000F4C1CC /* BarcodePaymentView.swift */,
+				83E327C02BF5CFA400C7891C /* CustomDivideView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8360DA8E2BF3C29D002CABBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8360DA8F2BF3C2BA002CABBC /* PaymentModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -428,13 +475,17 @@
 				83474A9B2BEE632F009B9C48 /* HomeViewController.swift in Sources */,
 				83474AAC2BEE65D4009B9C48 /* GetHomeResponseDTO.swift in Sources */,
 				8360DA832BF22C54002CABBC /* RecentTableViewCell.swift in Sources */,
+				8360DA922BF3C2C4002CABBC /* PaymentView.swift in Sources */,
+				83E327C12BF5CFA400C7891C /* CustomDivideView.swift in Sources */,
 				83474AB92BEE673C009B9C48 /* StringLiterals.swift in Sources */,
 				83474AB52BEE670C009B9C48 /* a.swift in Sources */,
 				8360DA852BF22D6F002CABBC /* MyAccountHeaderView.swift in Sources */,
 				83474AC92BEE68DC009B9C48 /* UIButton+.swift in Sources */,
+				8360DA902BF3C2BA002CABBC /* PaymentModel.swift in Sources */,
 				83474AAF2BEE6631009B9C48 /* NetworkResult.swift in Sources */,
 				83474A7F2BEE6160009B9C48 /* ViewController.swift in Sources */,
 				83474AAA2BEE65B5009B9C48 /* HomeAPIService.swift in Sources */,
+				83FA54422BF5200000F4C1CC /* BarcodePaymentView.swift in Sources */,
 				8360DA742BF2210D002CABBC /* TransferViewController.swift in Sources */,
 				83474ABB2BEE677C009B9C48 /* FontLiterals.swift in Sources */,
 				8360DA8A2BF25FF3002CABBC /* TransferModel.swift in Sources */,
@@ -449,6 +500,7 @@
 				8360DA812BF22C1F002CABBC /* MyAccountTableViewCell.swift in Sources */,
 				83474ACB2BEE68FC009B9C48 /* UIImageView+.swift in Sources */,
 				83474ABD2BEE6815009B9C48 /* UIStackView+.swift in Sources */,
+				8360DA942BF3C2CE002CABBC /* PaymentViewController.swift in Sources */,
 				8360DA6D2BF1CBD5002CABBC /* TabBarItem.swift in Sources */,
 				83474A7B2BEE6160009B9C48 /* AppDelegate.swift in Sources */,
 				83474A7D2BEE6160009B9C48 /* SceneDelegate.swift in Sources */,
