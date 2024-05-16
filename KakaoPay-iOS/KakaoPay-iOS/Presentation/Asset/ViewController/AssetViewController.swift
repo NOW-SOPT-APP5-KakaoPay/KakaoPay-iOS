@@ -13,7 +13,8 @@ final class AssetViewController: UIViewController {
     
     private let rootView = AssetView()
     
-    private let totalMoneyoneyData = TotalMoneyModel.dummy()
+    private let totalMoneyModelData = TotalMoneyModel.dummy()
+    private let newsModelDateList = NewsModel.dummy()
 
     // MARK: - Life Cycles
 
@@ -39,15 +40,15 @@ extension AssetViewController {
 
 extension AssetViewController: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 2
+        return 3
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch section {
-        case 0:
+        case 0, 1:
             return 1
-        case 1:
-            return 1
+        case 2:
+            return 3
         default: return 0
         }
     }
@@ -58,12 +59,18 @@ extension AssetViewController: UICollectionViewDataSource {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: TotalMoneyCell.className, for: indexPath) as? TotalMoneyCell else {
                 return UICollectionViewCell()
             }
-            cell.bindData(totalMoneyoneyData)
+            cell.bindData(totalMoneyModelData)
             return cell
         case 1:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: AccontCell.className, for: indexPath) as? AccontCell else {
                 return UICollectionViewCell()
             }
+            return cell
+        case 2:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NewsCell.className, for: indexPath) as? NewsCell else {
+                return UICollectionViewCell()
+            }
+            cell.configureCell(newsModelDateList[indexPath.item])
             return cell
         default: return UICollectionViewCell()
         }

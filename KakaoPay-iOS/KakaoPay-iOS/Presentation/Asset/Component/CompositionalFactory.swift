@@ -15,6 +15,8 @@ enum CompositionalFactory {
                 return createTotalMoneyLayout()
             case 1:
                 return createAccountLayout()
+            case 2:
+                return createNewsLayout()
             default:
                 return createDefaultLayout()
             }
@@ -39,7 +41,7 @@ enum CompositionalFactory {
         let itemSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(61))
         let item = NSCollectionLayoutItem(layoutSize: itemSize)
         
-        let groupSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(61))
+        let groupSize = itemSize
         let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, subitems: [item])
         
         let section = NSCollectionLayoutSection(group: group)
@@ -52,6 +54,21 @@ enum CompositionalFactory {
         let footerElement = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: footerSize, elementKind: UICollectionView.elementKindSectionFooter, alignment: .bottom)
         
         section.boundarySupplementaryItems = [headerElement, footerElement]
+        
+        return section
+    }
+    
+    static func createNewsLayout() -> NSCollectionLayoutSection {
+        let itemSize = NSCollectionLayoutSize(widthDimension: .absolute(129), heightDimension: .absolute(119))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        
+        let groupSize = NSCollectionLayoutSize(widthDimension: .estimated(1.0), heightDimension: .absolute(119))
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, repeatingSubitem: item, count: 3)
+        group.interItemSpacing = .fixed(8)
+        
+        let section = NSCollectionLayoutSection(group: group)
+        section.orthogonalScrollingBehavior = .groupPaging
+        section.contentInsets = NSDirectionalEdgeInsets(top: 12, leading: 15, bottom: 0, trailing: 15)
         
         return section
     }
