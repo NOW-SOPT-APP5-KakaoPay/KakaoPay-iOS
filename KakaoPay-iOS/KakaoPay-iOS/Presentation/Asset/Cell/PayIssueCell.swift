@@ -64,7 +64,7 @@ extension PayIssueCell {
     }
     
     private func setupHierarchy() {
-        addSubviews( imageView, labelStackView)
+        addSubviews(imageView, labelStackView)
         labelStackView.addArrangedSubviews(discriptionLabel, titleLabel)
     }
     

@@ -63,8 +63,6 @@ extension NewsCell {
     private func setupLayout() {
         newsImage.snp.makeConstraints {
             $0.top.leading.equalToSuperview().inset(20)
-            $0.width.equalTo(26)
-            $0.height.equalTo(22)
         }
         
         discriptionLabel.snp.makeConstraints {
