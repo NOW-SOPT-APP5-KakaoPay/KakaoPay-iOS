@@ -52,6 +52,11 @@
 		D083F0792BF64D5E00128DA1 /* InvestmentAndLoanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0782BF64D5E00128DA1 /* InvestmentAndLoanModel.swift */; };
 		D083F07B2BF671F200128DA1 /* PayIssueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F07A2BF671F100128DA1 /* PayIssueCell.swift */; };
 		D083F07D2BF6744B00128DA1 /* PayIssueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F07C2BF6744B00128DA1 /* PayIssueModel.swift */; };
+		D083F07F2BF681C300128DA1 /* DirectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F07E2BF681C300128DA1 /* DirectCell.swift */; };
+		D083F0812BF6841D00128DA1 /* DirectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0802BF6841D00128DA1 /* DirectModel.swift */; };
+		D083F0832BF68C6100128DA1 /* SectionBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0822BF68C6100128DA1 /* SectionBackgroundView.swift */; };
+		D0B98C182BF7B7FF00195359 /* DirectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B98C172BF7B7FF00195359 /* DirectHeaderView.swift */; };
+		D0B98C1A2BF7B9F000195359 /* DirectFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B98C192BF7B9F000195359 /* DirectFooterView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -98,6 +103,11 @@
 		D083F0782BF64D5E00128DA1 /* InvestmentAndLoanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentAndLoanModel.swift; sourceTree = "<group>"; };
 		D083F07A2BF671F100128DA1 /* PayIssueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayIssueCell.swift; sourceTree = "<group>"; };
 		D083F07C2BF6744B00128DA1 /* PayIssueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayIssueModel.swift; sourceTree = "<group>"; };
+		D083F07E2BF681C300128DA1 /* DirectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectCell.swift; sourceTree = "<group>"; };
+		D083F0802BF6841D00128DA1 /* DirectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectModel.swift; sourceTree = "<group>"; };
+		D083F0822BF68C6100128DA1 /* SectionBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionBackgroundView.swift; sourceTree = "<group>"; };
+		D0B98C172BF7B7FF00195359 /* DirectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectHeaderView.swift; sourceTree = "<group>"; };
+		D0B98C192BF7B9F000195359 /* DirectFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectFooterView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -332,6 +342,9 @@
 				D083F0742BF5F86200128DA1 /* SpendingCell.swift */,
 				D083F0762BF6481800128DA1 /* investmentAndLoanCell.swift */,
 				D083F07A2BF671F100128DA1 /* PayIssueCell.swift */,
+				D083F07E2BF681C300128DA1 /* DirectCell.swift */,
+				D0B98C172BF7B7FF00195359 /* DirectHeaderView.swift */,
+				D0B98C192BF7B9F000195359 /* DirectFooterView.swift */,
 			);
 			path = Cell;
 			sourceTree = "<group>";
@@ -359,6 +372,7 @@
 				D083F0722BF5854900128DA1 /* NewsModel.swift */,
 				D083F0782BF64D5E00128DA1 /* InvestmentAndLoanModel.swift */,
 				D083F07C2BF6744B00128DA1 /* PayIssueModel.swift */,
+				D083F0802BF6841D00128DA1 /* DirectModel.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -368,6 +382,7 @@
 			children = (
 				D083F06E2BF558F600128DA1 /* CompositionalFactory.swift */,
 				D083F06A2BF557BC00128DA1 /* MoreView.swift */,
+				D083F0822BF68C6100128DA1 /* SectionBackgroundView.swift */,
 			);
 			path = Component;
 			sourceTree = "<group>";
@@ -458,11 +473,14 @@
 				83474AC72BEE68A8009B9C48 /* UILabel+.swift in Sources */,
 				83474AA52BEE6529009B9C48 /* HomeCollectionViewCell.swift in Sources */,
 				83474A9B2BEE632F009B9C48 /* HomeViewController.swift in Sources */,
+				D083F07F2BF681C300128DA1 /* DirectCell.swift in Sources */,
 				83474AAC2BEE65D4009B9C48 /* GetHomeResponseDTO.swift in Sources */,
 				D083F07D2BF6744B00128DA1 /* PayIssueModel.swift in Sources */,
 				83474AB92BEE673C009B9C48 /* StringLiterals.swift in Sources */,
 				83474AB52BEE670C009B9C48 /* a.swift in Sources */,
+				D083F0812BF6841D00128DA1 /* DirectModel.swift in Sources */,
 				D083F0732BF5854900128DA1 /* NewsModel.swift in Sources */,
+				D083F0832BF68C6100128DA1 /* SectionBackgroundView.swift in Sources */,
 				D083F07B2BF671F200128DA1 /* PayIssueCell.swift in Sources */,
 				D083F0712BF57A7E00128DA1 /* NewsCell.swift in Sources */,
 				83474AC92BEE68DC009B9C48 /* UIButton+.swift in Sources */,
@@ -490,6 +508,8 @@
 				D083F0772BF6481800128DA1 /* investmentAndLoanCell.swift in Sources */,
 				8360DA6D2BF1CBD5002CABBC /* TabBarItem.swift in Sources */,
 				83474A7B2BEE6160009B9C48 /* AppDelegate.swift in Sources */,
+				D0B98C182BF7B7FF00195359 /* DirectHeaderView.swift in Sources */,
+				D0B98C1A2BF7B9F000195359 /* DirectFooterView.swift in Sources */,
 				83474A7D2BEE6160009B9C48 /* SceneDelegate.swift in Sources */,
 				D083F0792BF64D5E00128DA1 /* InvestmentAndLoanModel.swift in Sources */,
 				D083F0752BF5F86200128DA1 /* SpendingCell.swift in Sources */,

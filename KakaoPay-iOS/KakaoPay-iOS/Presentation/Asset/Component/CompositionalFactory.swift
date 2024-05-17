@@ -21,10 +21,14 @@ enum CompositionalFactory {
                 return createSpendingLayout()
             case 6:
                 return createPayIssueLayout()
+            case 7:
+                return createDirectMenuLayout()
             default:
                 return createInvestAndLoanLayout()
             }
         }
+        layout.register(SectionBackgroundView.self, forDecorationViewOfKind: "sectionBackground")
+
         return layout
     }
     
@@ -119,6 +123,38 @@ enum CompositionalFactory {
         let section = NSCollectionLayoutSection(group: group)
         section.orthogonalScrollingBehavior = .groupPaging
         section.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: 15, bottom: 0, trailing: 15)
+        
+        return section
+    }
+    
+    static func createDirectMenuLayout() -> NSCollectionLayoutSection {
+        let deviceWidth = UIScreen.main.bounds.size.width
+        
+        let itemSize = NSCollectionLayoutSize(widthDimension: .absolute((deviceWidth - 95)/2), heightDimension: .absolute(28))
+        let item = NSCollectionLayoutItem(layoutSize: itemSize)
+        
+        let groupSize = itemSize
+        let group = NSCollectionLayoutGroup.horizontal(layoutSize: groupSize, repeatingSubitem: item, count: 2)
+        group.interItemSpacing = .fixed(25)
+        
+        let section = NSCollectionLayoutSection(group: group)
+        section.interGroupSpacing = 20
+        section.contentInsets = NSDirectionalEdgeInsets(top: 24, leading: 35, bottom: 24, trailing: 35)
+        
+        let headerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(92))
+        let headerElement = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: headerSize, elementKind: UICollectionView.elementKindSectionHeader, alignment: .top)
+        headerElement.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: -35, bottom: 0, trailing: 0)
+        
+        let footerSize = NSCollectionLayoutSize(widthDimension: .fractionalWidth(1.0), heightDimension: .absolute(282))
+        let footerElement = NSCollectionLayoutBoundarySupplementaryItem(layoutSize: footerSize, elementKind: UICollectionView.elementKindSectionFooter, alignment: .bottom)
+        footerElement.contentInsets = NSDirectionalEdgeInsets(top: 0, leading: -35, bottom: 0, trailing: -35)
+        
+        section.boundarySupplementaryItems = [headerElement, footerElement]
+
+        
+        let decorationItem = NSCollectionLayoutDecorationItem.background(elementKind: "sectionBackground")
+        decorationItem.contentInsets = NSDirectionalEdgeInsets(top: 92, leading: 15, bottom: 282, trailing: 15)
+        section.decorationItems = [decorationItem]
         
         return section
     }

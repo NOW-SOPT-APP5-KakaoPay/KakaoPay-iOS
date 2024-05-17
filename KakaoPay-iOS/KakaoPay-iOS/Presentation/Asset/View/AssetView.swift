@@ -45,8 +45,8 @@ extension AssetView {
         self.backgroundColor = .kakaoGray200
         
         assetCollectionView.do {
-            $0.collectionViewLayout = CompositionalFactory.create()
             $0.backgroundColor = .clear
+            $0.collectionViewLayout = CompositionalFactory.create()
             $0.register(TotalMoneyCell.self, forCellWithReuseIdentifier: TotalMoneyCell.className)
             $0.register(AccontCell.self, forCellWithReuseIdentifier: AccontCell.className)
             $0.register(MoneyHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier:MoneyHeaderView.className)
@@ -55,6 +55,9 @@ extension AssetView {
             $0.register(SpendingCell.self, forCellWithReuseIdentifier: SpendingCell.className)
             $0.register(investmentAndLoanCell.self, forCellWithReuseIdentifier: investmentAndLoanCell.className)
             $0.register(PayIssueCell.self, forCellWithReuseIdentifier: PayIssueCell.className)
+            $0.register(DirectCell.self, forCellWithReuseIdentifier: DirectCell.className)
+            $0.register(DirectHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier:DirectHeaderView.className)
+            $0.register(DirectFooterView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: DirectFooterView.className)
         }
     }
     

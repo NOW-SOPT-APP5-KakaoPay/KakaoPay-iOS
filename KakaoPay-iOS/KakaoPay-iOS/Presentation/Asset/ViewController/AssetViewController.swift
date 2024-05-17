@@ -16,7 +16,8 @@ final class AssetViewController: UIViewController {
     private let totalMoneyModelData = TotalMoneyModel.dummy()
     private let newsModelDateList = NewsModel.dummy()
     private let investmentAndLoanModelDataList = InvestmentAndLoanModel.dummy()
-    private let payIssueModelDateList = PayIssueModel.dummy()
+    private let payIssueModelDataList = PayIssueModel.dummy()
+    private let directModelDataList = DirectModel.dummy()
 
     // MARK: - Life Cycles
 
@@ -42,7 +43,7 @@ extension AssetViewController {
 
 extension AssetViewController: UICollectionViewDataSource {
     func numberOfSections(in collectionView: UICollectionView) -> Int {
-        return 7
+        return 8
     }
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
@@ -50,9 +51,11 @@ extension AssetViewController: UICollectionViewDataSource {
         case 0, 1, 3, 4, 5:
             return 1
         case 2:
-            return 3
+            return newsModelDateList.count
         case 6:
-            return 4
+            return payIssueModelDataList.count
+        case 7:
+            return directModelDataList.count
         default: return 0
         }
     }
@@ -97,7 +100,13 @@ extension AssetViewController: UICollectionViewDataSource {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: PayIssueCell.className, for: indexPath) as? PayIssueCell else {
                 return UICollectionViewCell()
             }
-            cell.configureCell(payIssueModelDateList[indexPath.item])
+            cell.configureCell(payIssueModelDataList[indexPath.item])
+            return cell
+        case 7:
+            guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: DirectCell.className, for: indexPath) as? DirectCell else {
+                return UICollectionViewCell()
+            }
+            cell.configureCell(directModelDataList[indexPath.item])
             return cell
         default: return UICollectionViewCell()
         }
@@ -132,6 +141,20 @@ extension AssetViewController: UICollectionViewDataSource {
             }
             headerView.configureBlackTitleHeader(forTitle: "빌린 돈")
             return headerView
+        case 7:
+            if kind == UICollectionView.elementKindSectionHeader {
+                guard let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: DirectHeaderView.className, for: indexPath) as? DirectHeaderView else {
+                    return UICollectionReusableView()
+                }
+                return headerView
+            } else if kind == UICollectionView.elementKindSectionFooter {
+                guard let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: DirectFooterView.className, for: indexPath) as? DirectFooterView else {
+                    return UICollectionReusableView()
+                }
+                return footerView
+            } else {
+                return UICollectionReusableView()
+            }
         default: return UICollectionReusableView()
         }
     }
