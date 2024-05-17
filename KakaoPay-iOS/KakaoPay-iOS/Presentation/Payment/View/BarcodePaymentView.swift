@@ -68,7 +68,7 @@ private extension BarcodePaymentView {
         }
         
         paymoneySubLabel.do {
-            $0.text = "페이포인트 0.5% 적립"
+            $0.text = StringLiterals.Payment.savePaypoint
             $0.textColor = .kakaoBlue
             $0.font = .appleRegular(size: 13)
         }
@@ -93,9 +93,9 @@ private extension BarcodePaymentView {
             $0.onTintColor = .kakaoYellowDark
         }
         
-        paymoneyLabel.text = "페이머니"
-        paypointLabel.text = "페이포인트 사용"
-        availablecouponLabel.text = "사용 가능한 쿠폰"
+        paymoneyLabel.text = StringLiterals.Payment.paymoney
+        paypointLabel.text = StringLiterals.Payment.paypoint
+        availablecouponLabel.text = StringLiterals.Payment.availablecoupon
         
         [paymoneyLabel, paypointLabel, availablecouponLabel].forEach {
             $0.do {
@@ -121,7 +121,8 @@ private extension BarcodePaymentView {
                     toggleButton,
                     availablecouponLabel,
                     gotoButton,
-        divideLineTop, divideLineBottom)
+                    divideLineTop,
+                    divideLineBottom)
     }
     
     func setupLayout() {

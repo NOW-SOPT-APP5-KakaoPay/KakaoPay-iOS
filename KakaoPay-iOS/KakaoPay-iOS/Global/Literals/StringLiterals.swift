@@ -22,4 +22,11 @@ enum StringLiterals {
         static let countPlusOne = "+1개"
         static let recent = "최근"
     }
+    
+    enum Payment {
+        static let savePaypoint = "페이포인트 0.5% 적립"
+        static let paymoney = "페이머니"
+        static let paypoint = "페이포인트 사용"
+        static let availablecoupon  = "사용 가능한 쿠폰"
+    }
 }
