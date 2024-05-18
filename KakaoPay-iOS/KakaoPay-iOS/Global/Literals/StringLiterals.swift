@@ -20,6 +20,6 @@ enum StringLiterals {
         static let addAccount = "계좌추가"
         static let myAccount = "내 계좌"
         static let countPlusOne = "+1개"
-        static let recent = "최근"
+        static let recentAccount = "최근"
     }
 }
