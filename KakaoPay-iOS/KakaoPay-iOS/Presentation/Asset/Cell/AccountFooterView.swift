@@ -52,7 +52,7 @@ extension AccountFooterView {
         }
         
         moneyLabel.do {
-            $0.text = "0원"
+            $0.text = "97원"
             $0.font = .appleSemiBold(size: 16)
             $0.textColor = .kakaoGray600
             $0.textAlignment = .center

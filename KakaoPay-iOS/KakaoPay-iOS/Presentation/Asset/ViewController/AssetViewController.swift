@@ -77,7 +77,11 @@ extension AssetViewController: UICollectionViewDataSource {
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: NewsCell.className, for: indexPath) as? NewsCell else {
                 return UICollectionViewCell()
             }
-            cell.configureCell(newsModelDateList[indexPath.item])
+            if indexPath.item == 0 {
+                cell.configureCellWithHightlightText(data: newsModelDateList[indexPath.item], hightlightText: "1개")
+            } else {
+                cell.configureCell(newsModelDateList[indexPath.item])
+            }
             return cell
         case 3:
             guard let cell = collectionView.dequeueReusableCell(withReuseIdentifier: SpendingCell.className, for: indexPath) as? SpendingCell else {

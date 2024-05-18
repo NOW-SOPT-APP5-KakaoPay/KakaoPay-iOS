@@ -72,8 +72,8 @@ extension AccontCell {
         transferButton.do {
             $0.setTitle("송금", for: .normal)
             $0.setTitleColor(.kakaoBlack, for: .normal)
-            $0.backgroundColor = .kakaoGray400
-            $0.makeRounded(radius: 20)
+            $0.backgroundColor = .kakaoBluegray400
+            $0.makeRounded(radius: 15)
             $0.titleLabel?.font = .appleSemiBold(size: 14)
         }
     }

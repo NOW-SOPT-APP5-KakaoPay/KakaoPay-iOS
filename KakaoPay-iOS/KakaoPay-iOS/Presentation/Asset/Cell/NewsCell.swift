@@ -83,4 +83,11 @@ extension NewsCell {
         discriptionLabel.text = data.discription
         mainLabel.text = data.main
     }
+    
+    func configureCellWithHightlightText(data: NewsModel, hightlightText: String) {
+        newsImage.image = data.image
+        discriptionLabel.text = data.discription
+        mainLabel.text = data.main
+        mainLabel.asColor(targetString: hightlightText, color: .kakaoBlue)
+    }
 }

@@ -103,8 +103,8 @@ extension SpendingCell {
             $0.setTitle("분석", for: .normal)
             $0.setTitleColor(.kakaoBlack, for: .normal)
             $0.titleLabel?.font = .appleSemiBold(size: 14)
-            $0.makeRounded(radius: 20)
-            $0.backgroundColor = .kakaoGray400
+            $0.makeRounded(radius: 15)
+            $0.backgroundColor = .kakaoBluegray400
         }
         
         usingCardView.do {
