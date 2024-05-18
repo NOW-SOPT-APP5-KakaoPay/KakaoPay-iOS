@@ -20,7 +20,15 @@ final class PaymentView: UIView {
     private let tabBar = UIImageView()
     private let customView = BarcodePaymentView()
     
+    private let hanaCardImageView = UIImageView()
+    private let addCardImageView = UIImageView()
+    private let kakaoPayCardImageView = UIImageView()
+    private let kakaoBankCardImageView = UIImageView()
+    private let shinhanCardImageView = UIImageView()
+    private let kakaoPayCardLabel = UILabel()
+    private let cardStackView = UIStackView()
     
+    private let closeButton = UIButton()
     
     // MARK: - Life Cycles
     
@@ -52,10 +60,32 @@ private extension PaymentView {
             $0.layer.cornerRadius = 25
             $0.backgroundColor = .kakaoWhite
         }
+        
+        cardStackView.do {
+            $0.axis = .horizontal
+            $0.spacing = 20
+            $0.alignment = .center
+        }
+
+        hanaCardImageView.image = .imgHanabank
+        addCardImageView.image = .imgAddcard
+        kakaoPayCardImageView.image = .imgKakaopay
+        kakaoBankCardImageView.image = .imgKakaobank
+        shinhanCardImageView.image = .imgShinhan
+        
+        kakaoPayCardLabel.text = StringLiterals.Payment.kakaoPayCard
     }
     
     func setupHierarchy() {
-        addSubviews(tabBar, customView)
+        addSubviews(tabBar, 
+                    customView,
+                    cardStackView)
+        
+        cardStackView.addArrangedSubviews(hanaCardImageView, 
+                                          addCardImageView,
+                                          kakaoPayCardImageView,
+                                          kakaoBankCardImageView,
+                                          shinhanCardImageView)
     }
     
     func setupLayout() {
@@ -69,6 +99,11 @@ private extension PaymentView {
             $0.centerX.equalToSuperview()
             $0.width.equalTo(344)
             $0.height.equalTo(329)
+        }
+        
+        cardStackView.snp.makeConstraints {
+            $0.top.equalTo(customView.snp.bottom).offset(15)
+            $0.horizontalEdges.equalToSuperview()
         }
     }
 }
