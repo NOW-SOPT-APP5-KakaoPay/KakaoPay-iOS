@@ -36,6 +36,14 @@
 		8360DA6A2BF10A64002CABBC /* AppleSDGothicNeoR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8360DA662BF10A64002CABBC /* AppleSDGothicNeoR.ttf */; };
 		8360DA6D2BF1CBD5002CABBC /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA6C2BF1CBD5002CABBC /* TabBarItem.swift */; };
 		8360DA6F2BF1D3EA002CABBC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA6E2BF1D3EA002CABBC /* TabBarController.swift */; };
+		8360DA742BF2210D002CABBC /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA732BF2210C002CABBC /* TransferViewController.swift */; };
+		8360DA762BF22116002CABBC /* TransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA752BF22116002CABBC /* TransferView.swift */; };
+		8360DA7E2BF22581002CABBC /* TransferHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA7D2BF22581002CABBC /* TransferHeaderView.swift */; };
+		8360DA812BF22C1F002CABBC /* MyAccountTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA802BF22C1F002CABBC /* MyAccountTableViewCell.swift */; };
+		8360DA832BF22C54002CABBC /* RecentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA822BF22C54002CABBC /* RecentTableViewCell.swift */; };
+		8360DA852BF22D6F002CABBC /* MyAccountHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA842BF22D6F002CABBC /* MyAccountHeaderView.swift */; };
+		8360DA872BF22D7B002CABBC /* RecentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA862BF22D7B002CABBC /* RecentHeaderView.swift */; };
+		8360DA8A2BF25FF3002CABBC /* TransferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA892BF25FF3002CABBC /* TransferModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -66,6 +74,14 @@
 		8360DA662BF10A64002CABBC /* AppleSDGothicNeoR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleSDGothicNeoR.ttf; sourceTree = "<group>"; };
 		8360DA6C2BF1CBD5002CABBC /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		8360DA6E2BF1D3EA002CABBC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		8360DA732BF2210C002CABBC /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
+		8360DA752BF22116002CABBC /* TransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferView.swift; sourceTree = "<group>"; };
+		8360DA7D2BF22581002CABBC /* TransferHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferHeaderView.swift; sourceTree = "<group>"; };
+		8360DA802BF22C1F002CABBC /* MyAccountTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountTableViewCell.swift; sourceTree = "<group>"; };
+		8360DA822BF22C54002CABBC /* RecentTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentTableViewCell.swift; sourceTree = "<group>"; };
+		8360DA842BF22D6F002CABBC /* MyAccountHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountHeaderView.swift; sourceTree = "<group>"; };
+		8360DA862BF22D7B002CABBC /* RecentHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentHeaderView.swift; sourceTree = "<group>"; };
+		8360DA892BF25FF3002CABBC /* TransferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +129,7 @@
 		83474A8F2BEE62C1009B9C48 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				8360DA702BF220E0002CABBC /* Transfer */,
 				8360DA6B2BF1CBCA002CABBC /* TabBar */,
 				83474A932BEE62EA009B9C48 /* Home */,
 				83474A7E2BEE6160009B9C48 /* ViewController.swift */,
@@ -276,6 +293,53 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		8360DA702BF220E0002CABBC /* Transfer */ = {
+			isa = PBXGroup;
+			children = (
+				8360DA882BF25FE7002CABBC /* Model */,
+				8360DA7F2BF22B0E002CABBC /* Cell */,
+				8360DA722BF220FC002CABBC /* View */,
+				8360DA712BF220F4002CABBC /* ViewController */,
+			);
+			path = Transfer;
+			sourceTree = "<group>";
+		};
+		8360DA712BF220F4002CABBC /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8360DA732BF2210C002CABBC /* TransferViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		8360DA722BF220FC002CABBC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8360DA752BF22116002CABBC /* TransferView.swift */,
+				8360DA7D2BF22581002CABBC /* TransferHeaderView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8360DA7F2BF22B0E002CABBC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				8360DA802BF22C1F002CABBC /* MyAccountTableViewCell.swift */,
+				8360DA842BF22D6F002CABBC /* MyAccountHeaderView.swift */,
+				8360DA822BF22C54002CABBC /* RecentTableViewCell.swift */,
+				8360DA862BF22D7B002CABBC /* RecentHeaderView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		8360DA882BF25FE7002CABBC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8360DA892BF25FF3002CABBC /* TransferModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -363,24 +427,32 @@
 				83474AA52BEE6529009B9C48 /* HomeCollectionViewCell.swift in Sources */,
 				83474A9B2BEE632F009B9C48 /* HomeViewController.swift in Sources */,
 				83474AAC2BEE65D4009B9C48 /* GetHomeResponseDTO.swift in Sources */,
+				8360DA832BF22C54002CABBC /* RecentTableViewCell.swift in Sources */,
 				83474AB92BEE673C009B9C48 /* StringLiterals.swift in Sources */,
 				83474AB52BEE670C009B9C48 /* a.swift in Sources */,
+				8360DA852BF22D6F002CABBC /* MyAccountHeaderView.swift in Sources */,
 				83474AC92BEE68DC009B9C48 /* UIButton+.swift in Sources */,
 				83474AAF2BEE6631009B9C48 /* NetworkResult.swift in Sources */,
 				83474A7F2BEE6160009B9C48 /* ViewController.swift in Sources */,
 				83474AAA2BEE65B5009B9C48 /* HomeAPIService.swift in Sources */,
+				8360DA742BF2210D002CABBC /* TransferViewController.swift in Sources */,
 				83474ABB2BEE677C009B9C48 /* FontLiterals.swift in Sources */,
+				8360DA8A2BF25FF3002CABBC /* TransferModel.swift in Sources */,
 				83474AC12BEE684A009B9C48 /* UIView+.swift in Sources */,
+				8360DA762BF22116002CABBC /* TransferView.swift in Sources */,
 				83474AC52BEE688E009B9C48 /* NSObject+.swift in Sources */,
 				8360DA6F2BF1D3EA002CABBC /* TabBarController.swift in Sources */,
 				83474AC32BEE6878009B9C48 /* UIViewController+.swift in Sources */,
 				83474ABF2BEE6824009B9C48 /* UITextField+.swift in Sources */,
+				8360DA7E2BF22581002CABBC /* TransferHeaderView.swift in Sources */,
 				83474A992BEE6326009B9C48 /* HomeView.swift in Sources */,
+				8360DA812BF22C1F002CABBC /* MyAccountTableViewCell.swift in Sources */,
 				83474ACB2BEE68FC009B9C48 /* UIImageView+.swift in Sources */,
 				83474ABD2BEE6815009B9C48 /* UIStackView+.swift in Sources */,
 				8360DA6D2BF1CBD5002CABBC /* TabBarItem.swift in Sources */,
 				83474A7B2BEE6160009B9C48 /* AppDelegate.swift in Sources */,
 				83474A7D2BEE6160009B9C48 /* SceneDelegate.swift in Sources */,
+				8360DA872BF22D7B002CABBC /* RecentHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
