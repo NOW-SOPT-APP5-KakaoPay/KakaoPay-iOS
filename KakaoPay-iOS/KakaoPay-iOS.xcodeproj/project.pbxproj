@@ -36,6 +36,27 @@
 		8360DA6A2BF10A64002CABBC /* AppleSDGothicNeoR.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 8360DA662BF10A64002CABBC /* AppleSDGothicNeoR.ttf */; };
 		8360DA6D2BF1CBD5002CABBC /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA6C2BF1CBD5002CABBC /* TabBarItem.swift */; };
 		8360DA6F2BF1D3EA002CABBC /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA6E2BF1D3EA002CABBC /* TabBarController.swift */; };
+		D083F05C2BF546F800128DA1 /* TotalMoneyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F05B2BF546F800128DA1 /* TotalMoneyCell.swift */; };
+		D083F05E2BF5486600128DA1 /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F05D2BF5486600128DA1 /* AssetViewController.swift */; };
+		D083F0602BF5488C00128DA1 /* AssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F05F2BF5488C00128DA1 /* AssetView.swift */; };
+		D083F0632BF548AB00128DA1 /* TotalMoneyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0622BF548AB00128DA1 /* TotalMoneyModel.swift */; };
+		D083F0652BF54ADC00128DA1 /* AccontCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0642BF54ADC00128DA1 /* AccontCell.swift */; };
+		D083F0672BF54FC900128DA1 /* MoneyHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0662BF54FC900128DA1 /* MoneyHeaderView.swift */; };
+		D083F0692BF5518E00128DA1 /* AccountFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0682BF5518E00128DA1 /* AccountFooterView.swift */; };
+		D083F06B2BF557BC00128DA1 /* MoreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F06A2BF557BC00128DA1 /* MoreView.swift */; };
+		D083F06F2BF558F600128DA1 /* CompositionalFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F06E2BF558F600128DA1 /* CompositionalFactory.swift */; };
+		D083F0712BF57A7E00128DA1 /* NewsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0702BF57A7E00128DA1 /* NewsCell.swift */; };
+		D083F0732BF5854900128DA1 /* NewsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0722BF5854900128DA1 /* NewsModel.swift */; };
+		D083F0752BF5F86200128DA1 /* SpendingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0742BF5F86200128DA1 /* SpendingCell.swift */; };
+		D083F0772BF6481800128DA1 /* investmentAndLoanCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0762BF6481800128DA1 /* investmentAndLoanCell.swift */; };
+		D083F0792BF64D5E00128DA1 /* InvestmentAndLoanModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0782BF64D5E00128DA1 /* InvestmentAndLoanModel.swift */; };
+		D083F07B2BF671F200128DA1 /* PayIssueCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F07A2BF671F100128DA1 /* PayIssueCell.swift */; };
+		D083F07D2BF6744B00128DA1 /* PayIssueModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F07C2BF6744B00128DA1 /* PayIssueModel.swift */; };
+		D083F07F2BF681C300128DA1 /* DirectCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F07E2BF681C300128DA1 /* DirectCell.swift */; };
+		D083F0812BF6841D00128DA1 /* DirectModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0802BF6841D00128DA1 /* DirectModel.swift */; };
+		D083F0832BF68C6100128DA1 /* SectionBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0822BF68C6100128DA1 /* SectionBackgroundView.swift */; };
+		D0B98C182BF7B7FF00195359 /* DirectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B98C172BF7B7FF00195359 /* DirectHeaderView.swift */; };
+		D0B98C1A2BF7B9F000195359 /* DirectFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B98C192BF7B9F000195359 /* DirectFooterView.swift */; };
 		8360DA742BF2210D002CABBC /* TransferViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA732BF2210C002CABBC /* TransferViewController.swift */; };
 		8360DA762BF22116002CABBC /* TransferView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA752BF22116002CABBC /* TransferView.swift */; };
 		8360DA7E2BF22581002CABBC /* TransferHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA7D2BF22581002CABBC /* TransferHeaderView.swift */; };
@@ -74,6 +95,27 @@
 		8360DA662BF10A64002CABBC /* AppleSDGothicNeoR.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = AppleSDGothicNeoR.ttf; sourceTree = "<group>"; };
 		8360DA6C2BF1CBD5002CABBC /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
 		8360DA6E2BF1D3EA002CABBC /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		D083F05B2BF546F800128DA1 /* TotalMoneyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalMoneyCell.swift; sourceTree = "<group>"; };
+		D083F05D2BF5486600128DA1 /* AssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
+		D083F05F2BF5488C00128DA1 /* AssetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetView.swift; sourceTree = "<group>"; };
+		D083F0622BF548AB00128DA1 /* TotalMoneyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalMoneyModel.swift; sourceTree = "<group>"; };
+		D083F0642BF54ADC00128DA1 /* AccontCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccontCell.swift; sourceTree = "<group>"; };
+		D083F0662BF54FC900128DA1 /* MoneyHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoneyHeaderView.swift; sourceTree = "<group>"; };
+		D083F0682BF5518E00128DA1 /* AccountFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountFooterView.swift; sourceTree = "<group>"; };
+		D083F06A2BF557BC00128DA1 /* MoreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreView.swift; sourceTree = "<group>"; };
+		D083F06E2BF558F600128DA1 /* CompositionalFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompositionalFactory.swift; sourceTree = "<group>"; };
+		D083F0702BF57A7E00128DA1 /* NewsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsCell.swift; sourceTree = "<group>"; };
+		D083F0722BF5854900128DA1 /* NewsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewsModel.swift; sourceTree = "<group>"; };
+		D083F0742BF5F86200128DA1 /* SpendingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpendingCell.swift; sourceTree = "<group>"; };
+		D083F0762BF6481800128DA1 /* investmentAndLoanCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = investmentAndLoanCell.swift; sourceTree = "<group>"; };
+		D083F0782BF64D5E00128DA1 /* InvestmentAndLoanModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InvestmentAndLoanModel.swift; sourceTree = "<group>"; };
+		D083F07A2BF671F100128DA1 /* PayIssueCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayIssueCell.swift; sourceTree = "<group>"; };
+		D083F07C2BF6744B00128DA1 /* PayIssueModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayIssueModel.swift; sourceTree = "<group>"; };
+		D083F07E2BF681C300128DA1 /* DirectCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectCell.swift; sourceTree = "<group>"; };
+		D083F0802BF6841D00128DA1 /* DirectModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectModel.swift; sourceTree = "<group>"; };
+		D083F0822BF68C6100128DA1 /* SectionBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionBackgroundView.swift; sourceTree = "<group>"; };
+		D0B98C172BF7B7FF00195359 /* DirectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectHeaderView.swift; sourceTree = "<group>"; };
+		D0B98C192BF7B9F000195359 /* DirectFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectFooterView.swift; sourceTree = "<group>"; };
 		8360DA732BF2210C002CABBC /* TransferViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferViewController.swift; sourceTree = "<group>"; };
 		8360DA752BF22116002CABBC /* TransferView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferView.swift; sourceTree = "<group>"; };
 		8360DA7D2BF22581002CABBC /* TransferHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferHeaderView.swift; sourceTree = "<group>"; };
@@ -132,6 +174,7 @@
 				8360DA702BF220E0002CABBC /* Transfer */,
 				8360DA6B2BF1CBCA002CABBC /* TabBar */,
 				83474A932BEE62EA009B9C48 /* Home */,
+				D083F0562BF5467700128DA1 /* Asset */,
 				83474A7E2BEE6160009B9C48 /* ViewController.swift */,
 			);
 			path = Presentation;
@@ -293,6 +336,74 @@
 			path = TabBar;
 			sourceTree = "<group>";
 		};
+		D083F0562BF5467700128DA1 /* Asset */ = {
+			isa = PBXGroup;
+			children = (
+				D083F06C2BF5586700128DA1 /* Component */,
+				D083F05A2BF546D900128DA1 /* Model */,
+				D083F0592BF546D500128DA1 /* View */,
+				D083F0582BF546CB00128DA1 /* ViewController */,
+				D083F0572BF5469300128DA1 /* Cell */,
+			);
+			path = Asset;
+			sourceTree = "<group>";
+		};
+		D083F0572BF5469300128DA1 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				D083F05B2BF546F800128DA1 /* TotalMoneyCell.swift */,
+				D083F0662BF54FC900128DA1 /* MoneyHeaderView.swift */,
+				D083F0642BF54ADC00128DA1 /* AccontCell.swift */,
+				D083F0682BF5518E00128DA1 /* AccountFooterView.swift */,
+				D083F0702BF57A7E00128DA1 /* NewsCell.swift */,
+				D083F0742BF5F86200128DA1 /* SpendingCell.swift */,
+				D083F0762BF6481800128DA1 /* investmentAndLoanCell.swift */,
+				D083F07A2BF671F100128DA1 /* PayIssueCell.swift */,
+				D083F07E2BF681C300128DA1 /* DirectCell.swift */,
+				D0B98C172BF7B7FF00195359 /* DirectHeaderView.swift */,
+				D0B98C192BF7B9F000195359 /* DirectFooterView.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		D083F0582BF546CB00128DA1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				D083F05D2BF5486600128DA1 /* AssetViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		D083F0592BF546D500128DA1 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D083F05F2BF5488C00128DA1 /* AssetView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D083F05A2BF546D900128DA1 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D083F0622BF548AB00128DA1 /* TotalMoneyModel.swift */,
+				D083F0722BF5854900128DA1 /* NewsModel.swift */,
+				D083F0782BF64D5E00128DA1 /* InvestmentAndLoanModel.swift */,
+				D083F07C2BF6744B00128DA1 /* PayIssueModel.swift */,
+				D083F0802BF6841D00128DA1 /* DirectModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D083F06C2BF5586700128DA1 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				D083F06E2BF558F600128DA1 /* CompositionalFactory.swift */,
+				D083F06A2BF557BC00128DA1 /* MoreView.swift */,
+				D083F0822BF68C6100128DA1 /* SectionBackgroundView.swift */,
+			);
+			path = Component;
+			sourceTree = "<group>";
+		};
 		8360DA702BF220E0002CABBC /* Transfer */ = {
 			isa = PBXGroup;
 			children = (
@@ -426,32 +537,53 @@
 				83474AC72BEE68A8009B9C48 /* UILabel+.swift in Sources */,
 				83474AA52BEE6529009B9C48 /* HomeCollectionViewCell.swift in Sources */,
 				83474A9B2BEE632F009B9C48 /* HomeViewController.swift in Sources */,
+				D083F07F2BF681C300128DA1 /* DirectCell.swift in Sources */,
 				83474AAC2BEE65D4009B9C48 /* GetHomeResponseDTO.swift in Sources */,
+				D083F07D2BF6744B00128DA1 /* PayIssueModel.swift in Sources */,
 				8360DA832BF22C54002CABBC /* RecentTableViewCell.swift in Sources */,
 				83474AB92BEE673C009B9C48 /* StringLiterals.swift in Sources */,
 				83474AB52BEE670C009B9C48 /* a.swift in Sources */,
+				D083F0812BF6841D00128DA1 /* DirectModel.swift in Sources */,
+				D083F0732BF5854900128DA1 /* NewsModel.swift in Sources */,
+				D083F0832BF68C6100128DA1 /* SectionBackgroundView.swift in Sources */,
+				D083F07B2BF671F200128DA1 /* PayIssueCell.swift in Sources */,
+				D083F0712BF57A7E00128DA1 /* NewsCell.swift in Sources */,
 				8360DA852BF22D6F002CABBC /* MyAccountHeaderView.swift in Sources */,
 				83474AC92BEE68DC009B9C48 /* UIButton+.swift in Sources */,
 				83474AAF2BEE6631009B9C48 /* NetworkResult.swift in Sources */,
 				83474A7F2BEE6160009B9C48 /* ViewController.swift in Sources */,
 				83474AAA2BEE65B5009B9C48 /* HomeAPIService.swift in Sources */,
+				D083F0692BF5518E00128DA1 /* AccountFooterView.swift in Sources */,
 				8360DA742BF2210D002CABBC /* TransferViewController.swift in Sources */,
 				83474ABB2BEE677C009B9C48 /* FontLiterals.swift in Sources */,
 				8360DA8A2BF25FF3002CABBC /* TransferModel.swift in Sources */,
 				83474AC12BEE684A009B9C48 /* UIView+.swift in Sources */,
+				D083F0672BF54FC900128DA1 /* MoneyHeaderView.swift in Sources */,
 				8360DA762BF22116002CABBC /* TransferView.swift in Sources */,
 				83474AC52BEE688E009B9C48 /* NSObject+.swift in Sources */,
 				8360DA6F2BF1D3EA002CABBC /* TabBarController.swift in Sources */,
+				D083F0602BF5488C00128DA1 /* AssetView.swift in Sources */,
 				83474AC32BEE6878009B9C48 /* UIViewController+.swift in Sources */,
 				83474ABF2BEE6824009B9C48 /* UITextField+.swift in Sources */,
+				D083F06F2BF558F600128DA1 /* CompositionalFactory.swift in Sources */,
+				D083F06B2BF557BC00128DA1 /* MoreView.swift in Sources */,
 				8360DA7E2BF22581002CABBC /* TransferHeaderView.swift in Sources */,
 				83474A992BEE6326009B9C48 /* HomeView.swift in Sources */,
 				8360DA812BF22C1F002CABBC /* MyAccountTableViewCell.swift in Sources */,
 				83474ACB2BEE68FC009B9C48 /* UIImageView+.swift in Sources */,
+				D083F05C2BF546F800128DA1 /* TotalMoneyCell.swift in Sources */,
+				D083F0632BF548AB00128DA1 /* TotalMoneyModel.swift in Sources */,
+				D083F0652BF54ADC00128DA1 /* AccontCell.swift in Sources */,
+				D083F05E2BF5486600128DA1 /* AssetViewController.swift in Sources */,
 				83474ABD2BEE6815009B9C48 /* UIStackView+.swift in Sources */,
+				D083F0772BF6481800128DA1 /* investmentAndLoanCell.swift in Sources */,
 				8360DA6D2BF1CBD5002CABBC /* TabBarItem.swift in Sources */,
 				83474A7B2BEE6160009B9C48 /* AppDelegate.swift in Sources */,
+				D0B98C182BF7B7FF00195359 /* DirectHeaderView.swift in Sources */,
+				D0B98C1A2BF7B9F000195359 /* DirectFooterView.swift in Sources */,
 				83474A7D2BEE6160009B9C48 /* SceneDelegate.swift in Sources */,
+				D083F0792BF64D5E00128DA1 /* InvestmentAndLoanModel.swift in Sources */,
+				D083F0752BF5F86200128DA1 /* SpendingCell.swift in Sources */,
 				8360DA872BF22D7B002CABBC /* RecentHeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -585,7 +717,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KT2Q6HC762;
+				DEVELOPMENT_TEAM = X395BM5WW7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "KakaoPay-iOS/Global/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -612,7 +744,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KT2Q6HC762;
+				DEVELOPMENT_TEAM = X395BM5WW7;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "KakaoPay-iOS/Global/Resources/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
