@@ -28,7 +28,7 @@ final class PaymentView: UIView {
     private let kakaoPayCardLabel = UILabel()
     private let cardStackView = UIStackView()
     
-    private let closeButton = UIButton()
+    let closeButton = UIButton()
     
     // MARK: - Life Cycles
     
@@ -63,8 +63,9 @@ private extension PaymentView {
         
         cardStackView.do {
             $0.axis = .horizontal
-            $0.spacing = 20
+            $0.spacing = 8
             $0.alignment = .center
+            $0.distribution = .equalSpacing
         }
 
         hanaCardImageView.image = .imgHanabank
@@ -73,13 +74,27 @@ private extension PaymentView {
         kakaoBankCardImageView.image = .imgKakaobank
         shinhanCardImageView.image = .imgShinhan
         
-        kakaoPayCardLabel.text = StringLiterals.Payment.kakaoPayCard
+
+        kakaoPayCardLabel.do {
+            $0.text = StringLiterals.Payment.kakaoPayCard
+            $0.textColor = .kakaoGray600
+            $0.font = .appleRegular(size: 12)
+        }
+        
+        closeButton.do {
+            $0.setImage(.icClose, for: .normal)
+            $0.setTitle(" 닫기", for: .normal)
+            $0.setTitleColor(.kakaoBlack, for: .normal)
+            $0.backgroundColor = .clear
+        }
     }
     
     func setupHierarchy() {
         addSubviews(tabBar, 
                     customView,
-                    cardStackView)
+                    cardStackView,
+                    kakaoPayCardLabel,
+                    closeButton)
         
         cardStackView.addArrangedSubviews(hanaCardImageView, 
                                           addCardImageView,
@@ -102,8 +117,20 @@ private extension PaymentView {
         }
         
         cardStackView.snp.makeConstraints {
-            $0.top.equalTo(customView.snp.bottom).offset(15)
+            $0.top.equalTo(customView.snp.bottom).offset(41)
             $0.horizontalEdges.equalToSuperview()
+        }
+        
+        kakaoPayCardLabel.snp.makeConstraints {
+            $0.top.equalTo(cardStackView.snp.bottom).offset(10)
+            $0.centerX.equalTo(cardStackView)
+        }
+        
+        closeButton.snp.makeConstraints {
+            $0.top.equalTo(kakaoPayCardLabel.snp.bottom).offset(33)
+            $0.centerX.equalToSuperview()
+            $0.width.equalTo(110)
+            $0.height.equalTo(44)
         }
     }
 }
