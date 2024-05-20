@@ -44,7 +44,6 @@ final class BarcodePaymentView: UIView {
         setupHierarchy()
         setupLayout()
         bindData()
-        
     }
     
     @available(*, unavailable)
