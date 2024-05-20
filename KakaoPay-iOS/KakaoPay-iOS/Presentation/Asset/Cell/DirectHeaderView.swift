@@ -39,7 +39,7 @@ extension DirectHeaderView {
         backgroundColor = .clear
         
         titleLabel.do {
-            $0.text = "자산 바로가기"
+            $0.text = StringLiterals.Asset.assetDirect
             $0.font = .appleSemiBold(size: 23)
             $0.textAlignment = .center
         }

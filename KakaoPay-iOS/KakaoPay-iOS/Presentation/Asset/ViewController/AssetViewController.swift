@@ -48,15 +48,14 @@ extension AssetViewController: UICollectionViewDataSource {
     
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         switch section {
-        case 0, 1, 3, 4, 5:
-            return 1
         case 2:
             return newsModelDateList.count
         case 6:
             return payIssueModelDataList.count
         case 7:
             return directModelDataList.count
-        default: return 0
+        default:
+            return 1
         }
     }
     
@@ -123,7 +122,7 @@ extension AssetViewController: UICollectionViewDataSource {
                 guard let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: MoneyHeaderView.className, for: indexPath) as? MoneyHeaderView else {
                     return UICollectionReusableView()
                 }
-                headerView.configureGrayTitleHeader(forTitle: "계좌")
+                headerView.configureGrayTitleHeader(forTitle: StringLiterals.Asset.account)
                 return headerView
             } else if kind == UICollectionView.elementKindSectionFooter {
                 guard let footerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: AccountFooterView.className, for: indexPath) as? AccountFooterView else {
@@ -137,13 +136,13 @@ extension AssetViewController: UICollectionViewDataSource {
             guard let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: MoneyHeaderView.className, for: indexPath) as? MoneyHeaderView else {
                 return UICollectionReusableView()
             }
-            headerView.configureBlackTitleHeader(forTitle: "투자한 돈")
+            headerView.configureBlackTitleHeader(forTitle: StringLiterals.Asset.investedMoney)
             return headerView
         case 5:
             guard let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: MoneyHeaderView.className, for: indexPath) as? MoneyHeaderView else {
                 return UICollectionReusableView()
             }
-            headerView.configureBlackTitleHeader(forTitle: "빌린 돈")
+            headerView.configureBlackTitleHeader(forTitle: StringLiterals.Asset.borrowesMoney)
             return headerView
         case 7:
             if kind == UICollectionView.elementKindSectionHeader {

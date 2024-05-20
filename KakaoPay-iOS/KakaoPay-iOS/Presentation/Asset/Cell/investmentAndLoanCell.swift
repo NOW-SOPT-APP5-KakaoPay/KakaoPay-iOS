@@ -81,7 +81,7 @@ extension investmentAndLoanCell {
     
     private func setupLayout() {
         innerView.snp.makeConstraints {
-            $0.top.bottom.leading.trailing.equalToSuperview().inset(8)
+            $0.edges.equalToSuperview().inset(8)
         }
         
         imageView.snp.makeConstraints {

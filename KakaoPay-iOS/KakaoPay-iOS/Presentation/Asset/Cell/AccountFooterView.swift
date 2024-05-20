@@ -45,7 +45,7 @@ extension AccountFooterView {
         layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
         
         pointMoneyLabel.do {
-            $0.text = "포인트·머니"
+            $0.text = StringLiterals.Asset.pointMoney
             $0.font = .appleSemiBold(size: 20)
             $0.textColor = .kakaoGray600
             $0.textAlignment = .center

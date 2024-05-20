@@ -12,9 +12,6 @@ import Then
 
 final class AssetView: UIView {
     
-    // MARK: - Properties
-    
-    
     // MARK: - UI Components
     
     private let assetCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())

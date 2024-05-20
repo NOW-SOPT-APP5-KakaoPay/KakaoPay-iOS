@@ -38,7 +38,7 @@ final class RecentHeaderView: UITableViewHeaderFooterView {
 private extension RecentHeaderView {
     func setupStyle() {
         recentLabel.do {
-            $0.text = StringLiterals.Transfer.recent
+            $0.text = StringLiterals.Transfer.recentAccount
             $0.font = .appleRegular(size: 13)
             $0.textColor = .kakaoBlack
         }

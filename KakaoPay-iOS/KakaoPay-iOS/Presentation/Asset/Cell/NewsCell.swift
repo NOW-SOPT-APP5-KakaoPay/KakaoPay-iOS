@@ -44,13 +44,11 @@ extension NewsCell {
         makeRounded(radius: 15)
         
         discriptionLabel.do {
-            $0.text = ""
             $0.textColor = .kakaoGray600
             $0.font = .appleRegular(size: 14)
         }
         
         mainLabel.do {
-            $0.text = ""
             $0.textColor = .kakaoBlack
             $0.font = .appleSemiBold(size: 16)
         }

@@ -53,7 +53,7 @@ extension SpendingCell {
         makeRounded(radius: 15)
         
         titleLabel.do {
-            $0.text = "쓴 돈"
+            $0.text = StringLiterals.Asset.spentMoney
             $0.textColor = .kakaoBlack
             $0.font = .appleSemiBold(size: 20)
             $0.textAlignment = .center

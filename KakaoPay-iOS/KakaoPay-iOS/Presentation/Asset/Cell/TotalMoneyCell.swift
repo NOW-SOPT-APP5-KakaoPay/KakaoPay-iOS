@@ -45,7 +45,7 @@ extension TotalMoneyCell {
         makeRounded(radius: 15)
         
         titleLabel.do {
-            $0.text = "모은 돈"
+            $0.text = StringLiterals.Asset.totalMoney
             $0.font = .appleSemiBold(size: 20)
             $0.textColor = .kakaoBlack
             $0.textAlignment = .center
