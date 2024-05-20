@@ -24,6 +24,19 @@ final class PaymentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        setaddTarget()
+    }
+}
 
+
+private extension PaymentViewController {
+    func setaddTarget() {
+        rootView.closeButton.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
+    }
+    
+    @objc
+    func tappedButton() {
+        print("닫기 버튼 클릭")
+        navigationController?.popViewController(animated: false)
     }
 }
