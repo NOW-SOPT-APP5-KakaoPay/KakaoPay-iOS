@@ -8,10 +8,7 @@
 import UIKit
 
 final class PaymentViewController: UIViewController {
-    
-    // MARK: - Properties
-    
-    
+
     // MARK: - UI Components
     
     private let rootView = PaymentView()
@@ -27,7 +24,6 @@ final class PaymentViewController: UIViewController {
         setaddTarget()
     }
 }
-
 
 private extension PaymentViewController {
     func setaddTarget() {

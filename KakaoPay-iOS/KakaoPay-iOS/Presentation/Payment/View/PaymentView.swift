@@ -12,9 +12,6 @@ import Then
 
 final class PaymentView: UIView {
     
-    // MARK: - Properties
-    
-    
     // MARK: - UI Components
     
     private let tabBar = UIImageView()
@@ -38,7 +35,6 @@ final class PaymentView: UIView {
         setupStyle()
         setupHierarchy()
         setupLayout()
-        
     }
     
     @available(*, unavailable)
@@ -73,7 +69,6 @@ private extension PaymentView {
         kakaoPayCardImageView.image = .imgKakaopay
         kakaoBankCardImageView.image = .imgKakaobank
         shinhanCardImageView.image = .imgShinhan
-        
 
         kakaoPayCardLabel.do {
             $0.text = StringLiterals.Payment.kakaoPayCard

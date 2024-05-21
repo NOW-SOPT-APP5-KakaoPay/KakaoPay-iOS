@@ -12,9 +12,6 @@ import Then
 
 final class BarcodePaymentView: UIView {
     
-    // MARK: - Properties
-    
-    
     // MARK: - UI Components
     
     private let barcodeImage = UIImageView()
@@ -57,7 +54,6 @@ final class BarcodePaymentView: UIView {
 private extension BarcodePaymentView {
     func setupStyle() {
         self.backgroundColor = .kakaoWhite
-        
         barcodeImage.do {
             $0.image = .imgBarcode
         }
@@ -86,7 +82,6 @@ private extension BarcodePaymentView {
             $0.font = .appleRegular(size: 13)
         }
         
-        //toggle button setting
         toggleButton.do {
             $0.isOn = false
             $0.onTintColor = .kakaoYellowDark
@@ -171,7 +166,7 @@ private extension BarcodePaymentView {
             $0.top.equalTo(paypointLabel.snp.bottom).offset(4)
             $0.leading.equalToSuperview().inset(22)
         }
- 
+        
         toggleButton.snp.makeConstraints {
             $0.top.equalTo(paypointLabel.snp.top)
             $0.trailing.equalToSuperview().inset(22)
@@ -195,7 +190,6 @@ private extension BarcodePaymentView {
         }
     }
 }
-
 
 extension BarcodePaymentView {
     func bindData() {
