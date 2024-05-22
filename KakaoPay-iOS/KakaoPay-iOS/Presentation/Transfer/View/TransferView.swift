@@ -12,9 +12,6 @@ import Then
 
 final class TransferView: UIView {
     
-    // MARK: - Properties
-    
-    
     // MARK: - UI Components
     
     let transferTableView = UITableView()
@@ -30,7 +27,6 @@ final class TransferView: UIView {
         setStyle()
         setHierarchy()
         setLayout()
-        
     }
     
     @available(*, unavailable)

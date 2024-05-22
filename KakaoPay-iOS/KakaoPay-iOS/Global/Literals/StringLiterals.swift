@@ -20,7 +20,17 @@ enum StringLiterals {
         static let addAccount = "계좌추가"
         static let myAccount = "내 계좌"
         static let countPlusOne = "+1개"
-        static let recent = "최근"
+        static let recentAccount = "최근"
+    }
+    
+    enum Asset {
+        static let totalMoney = "모은 돈"
+        static let account = "계좌"
+        static let pointMoney = "포인트·머니"
+        static let spentMoney = "쓴 돈"
+        static let investedMoney = "투자한 돈"
+        static let borrowesMoney = "빌린 돈"
+        static let assetDirect = "자산 바로가기"
     }
     
     enum Payment {
