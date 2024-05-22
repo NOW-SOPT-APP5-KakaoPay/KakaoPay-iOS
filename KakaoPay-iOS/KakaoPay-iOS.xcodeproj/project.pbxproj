@@ -49,6 +49,13 @@
 		8360DA942BF3C2CE002CABBC /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA932BF3C2CE002CABBC /* PaymentViewController.swift */; };
 		836814E42BFD01A400472A0B /* MenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836814E32BFD01A400472A0B /* MenuCollectionViewCell.swift */; };
 		836814E62BFD02D600472A0B /* HomeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836814E52BFD02D600472A0B /* HomeModel.swift */; };
+		836814E82BFDB3B800472A0B /* MoyaPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836814E72BFDB3B800472A0B /* MoyaPlugin.swift */; };
+		836814EB2BFDB52C00472A0B /* GetBalanceDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836814EA2BFDB52C00472A0B /* GetBalanceDTO.swift */; };
+		836814ED2BFDB54200472A0B /* GetPayPointDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836814EC2BFDB54200472A0B /* GetPayPointDTO.swift */; };
+		836814EF2BFDB55300472A0B /* PostBookmarkDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836814EE2BFDB55300472A0B /* PostBookmarkDTO.swift */; };
+		836814F12BFDB56900472A0B /* GetHistoriesDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836814F02BFDB56900472A0B /* GetHistoriesDTO.swift */; };
+		836814F32BFDB58000472A0B /* GetPayMoneyDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836814F22BFDB58000472A0B /* GetPayMoneyDTO.swift */; };
+		836814F52BFDB58C00472A0B /* DeleteBookmarkDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836814F42BFDB58C00472A0B /* DeleteBookmarkDTO.swift */; };
 		83E327C12BF5CFA400C7891C /* CustomDivideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E327C02BF5CFA400C7891C /* CustomDivideView.swift */; };
 		83FA54422BF5200000F4C1CC /* BarcodePaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA54412BF5200000F4C1CC /* BarcodePaymentView.swift */; };
 /* End PBXBuildFile section */
@@ -94,6 +101,13 @@
 		8360DA932BF3C2CE002CABBC /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		836814E32BFD01A400472A0B /* MenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCollectionViewCell.swift; sourceTree = "<group>"; };
 		836814E52BFD02D600472A0B /* HomeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeModel.swift; sourceTree = "<group>"; };
+		836814E72BFDB3B800472A0B /* MoyaPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaPlugin.swift; sourceTree = "<group>"; };
+		836814EA2BFDB52C00472A0B /* GetBalanceDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBalanceDTO.swift; sourceTree = "<group>"; };
+		836814EC2BFDB54200472A0B /* GetPayPointDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPayPointDTO.swift; sourceTree = "<group>"; };
+		836814EE2BFDB55300472A0B /* PostBookmarkDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostBookmarkDTO.swift; sourceTree = "<group>"; };
+		836814F02BFDB56900472A0B /* GetHistoriesDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHistoriesDTO.swift; sourceTree = "<group>"; };
+		836814F22BFDB58000472A0B /* GetPayMoneyDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPayMoneyDTO.swift; sourceTree = "<group>"; };
+		836814F42BFDB58C00472A0B /* DeleteBookmarkDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteBookmarkDTO.swift; sourceTree = "<group>"; };
 		83E327C02BF5CFA400C7891C /* CustomDivideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivideView.swift; sourceTree = "<group>"; };
 		83FA54412BF5200000F4C1CC /* BarcodePaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodePaymentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -155,6 +169,7 @@
 		83474A902BEE62CB009B9C48 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				836814E92BFDB51300472A0B /* DTO */,
 				83474AAD2BEE6604009B9C48 /* Base */,
 				83474AA62BEE6569009B9C48 /* Home */,
 			);
@@ -246,6 +261,7 @@
 			isa = PBXGroup;
 			children = (
 				83474AAE2BEE6631009B9C48 /* NetworkResult.swift */,
+				836814E72BFDB3B800472A0B /* MoyaPlugin.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -393,6 +409,19 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		836814E92BFDB51300472A0B /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				836814EA2BFDB52C00472A0B /* GetBalanceDTO.swift */,
+				836814EC2BFDB54200472A0B /* GetPayPointDTO.swift */,
+				836814EE2BFDB55300472A0B /* PostBookmarkDTO.swift */,
+				836814F02BFDB56900472A0B /* GetHistoriesDTO.swift */,
+				836814F22BFDB58000472A0B /* GetPayMoneyDTO.swift */,
+				836814F42BFDB58C00472A0B /* DeleteBookmarkDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -480,6 +509,7 @@
 				83474AA52BEE6529009B9C48 /* HomeCollectionViewCell.swift in Sources */,
 				83474A9B2BEE632F009B9C48 /* HomeViewController.swift in Sources */,
 				83474AAC2BEE65D4009B9C48 /* GetHomeResponseDTO.swift in Sources */,
+				836814EF2BFDB55300472A0B /* PostBookmarkDTO.swift in Sources */,
 				8360DA832BF22C54002CABBC /* RecentTableViewCell.swift in Sources */,
 				8360DA922BF3C2C4002CABBC /* PaymentView.swift in Sources */,
 				83E327C12BF5CFA400C7891C /* CustomDivideView.swift in Sources */,
@@ -494,17 +524,23 @@
 				83474AAA2BEE65B5009B9C48 /* HomeAPIService.swift in Sources */,
 				83FA54422BF5200000F4C1CC /* BarcodePaymentView.swift in Sources */,
 				8360DA742BF2210D002CABBC /* TransferViewController.swift in Sources */,
+				836814E82BFDB3B800472A0B /* MoyaPlugin.swift in Sources */,
+				836814EB2BFDB52C00472A0B /* GetBalanceDTO.swift in Sources */,
+				836814F32BFDB58000472A0B /* GetPayMoneyDTO.swift in Sources */,
+				836814F52BFDB58C00472A0B /* DeleteBookmarkDTO.swift in Sources */,
 				83474ABB2BEE677C009B9C48 /* FontLiterals.swift in Sources */,
 				8360DA8A2BF25FF3002CABBC /* TransferModel.swift in Sources */,
 				83474AC12BEE684A009B9C48 /* UIView+.swift in Sources */,
 				8360DA762BF22116002CABBC /* TransferView.swift in Sources */,
 				83474AC52BEE688E009B9C48 /* NSObject+.swift in Sources */,
 				8360DA6F2BF1D3EA002CABBC /* TabBarController.swift in Sources */,
+				836814ED2BFDB54200472A0B /* GetPayPointDTO.swift in Sources */,
 				836814E62BFD02D600472A0B /* HomeModel.swift in Sources */,
 				83474AC32BEE6878009B9C48 /* UIViewController+.swift in Sources */,
 				83474ABF2BEE6824009B9C48 /* UITextField+.swift in Sources */,
 				8360DA7E2BF22581002CABBC /* TransferHeaderView.swift in Sources */,
 				83474A992BEE6326009B9C48 /* HomeView.swift in Sources */,
+				836814F12BFDB56900472A0B /* GetHistoriesDTO.swift in Sources */,
 				8360DA812BF22C1F002CABBC /* MyAccountTableViewCell.swift in Sources */,
 				83474ACB2BEE68FC009B9C48 /* UIImageView+.swift in Sources */,
 				83474ABD2BEE6815009B9C48 /* UIStackView+.swift in Sources */,
