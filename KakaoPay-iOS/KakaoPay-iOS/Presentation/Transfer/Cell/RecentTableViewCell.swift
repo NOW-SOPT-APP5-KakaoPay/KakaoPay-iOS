@@ -12,6 +12,10 @@ import Then
 
 final class RecentTableViewCell: UITableViewCell {
     
+    //MARK: - Properties
+    
+    private var recentAccountlist = [GetHistoriesData]()
+    
     // MARK: - UI Components
     
     private let bankImage = UIImageView()
@@ -36,6 +40,7 @@ final class RecentTableViewCell: UITableViewCell {
         setupStyle()
         setupHierarchy()
         setupLayout()
+        setAddTarget()
     }
 }
 
@@ -64,11 +69,11 @@ private extension RecentTableViewCell {
     }
     
     func setupHierarchy() {
-     addSubviews(bankImage, 
-                 personName,
-                 bankLabel,
-                 accountLabel,
-                 starButton)
+        contentView.addSubviews(bankImage,
+                                personName,
+                                bankLabel,
+                                accountLabel,
+                                starButton)
     }
     
     func setupLayout() {
@@ -95,15 +100,49 @@ private extension RecentTableViewCell {
         starButton.snp.makeConstraints {
             $0.centerY.equalToSuperview()
             $0.trailing.equalToSuperview().inset(24)
+            $0.height.width.equalTo(40)
         }
+    }
+    
+    func setAddTarget() {
+        starButton.addTarget(self, action: #selector(starButtonTapped), for: .touchUpInside)
     }
 }
 
 extension RecentTableViewCell {
-    func bindData(forModel: TransferModel) {
+    
+    //MARK: - Private Method
+    
+    private func postBookmarkAPI() {
+        BookmarkService.shared.postBookmarkAPI(bank: recentAccountlist.first?.bank ?? "", bankAccount: recentAccountlist.first?.bankAccount ?? "") { response in
+            switch response {
+            case .success(let data):
+                print("Succese")
+            default:
+                return
+            }
+        }
+    }
+    
+    private func deleteBookmarkAPI() {
+        BookmarkService.shared.deleteBookmarkAPI(bank: recentAccountlist.first?.bank ?? "", bankAccount: recentAccountlist.first?.bankAccount ?? "") { response in
+            switch response {
+            case .success(let data):
+                print("Succese")
+            default:
+                return
+            }
+        }
+    }
+    
+    //MARK: - Method
+    
+    func bindData(forModel: GetHistoriesData) {
+        recentAccountlist.append(forModel)
+        
         bankImage.image = checkBank(bank: forModel.bank).image
         personName.text = forModel.name
-        bankLabel.text = forModel.bank + "뱅크"
+        bankLabel.text = forModel.bank
         accountLabel.text = forModel.bankAccount
     }
     
@@ -112,13 +151,20 @@ extension RecentTableViewCell {
         
         if bank == "신한" {
             bankImage.image = .imgShinhanLogo
-        } else if bank == "카카오" {
+        } else if bank == "카카오뱅크" {
             bankImage.image = .imgKakaobankLogo
         } else {
             bankImage.image = .imgTossLogo
         }
         
         return bankImage
+    }
+    
+    //MARK: - @Objc Method
+    
+    @objc private func starButtonTapped() {
+        starButton.isSelected ? deleteBookmarkAPI() : postBookmarkAPI()
+        starButton.isSelected.toggle()
     }
 }
 

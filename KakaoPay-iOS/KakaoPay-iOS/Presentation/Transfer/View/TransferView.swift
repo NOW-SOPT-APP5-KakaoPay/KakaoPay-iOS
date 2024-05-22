@@ -91,3 +91,9 @@ private extension TransferView {
         }
     }
 }
+
+extension TransferView {
+    func updateTableView() {
+        transferTableView.reloadData()
+    }
+}
