@@ -85,6 +85,7 @@
 		D083F0832BF68C6100128DA1 /* SectionBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0822BF68C6100128DA1 /* SectionBackgroundView.swift */; };
 		D0B98C182BF7B7FF00195359 /* DirectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B98C172BF7B7FF00195359 /* DirectHeaderView.swift */; };
 		D0B98C1A2BF7B9F000195359 /* DirectFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B98C192BF7B9F000195359 /* DirectFooterView.swift */; };
+		D03DEA9D2BFDFA1700BB92FE /* BookmarkResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DEA9C2BFDFA1700BB92FE /* BookmarkResponseDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -164,6 +165,7 @@
 		D083F0822BF68C6100128DA1 /* SectionBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionBackgroundView.swift; sourceTree = "<group>"; };
 		D0B98C172BF7B7FF00195359 /* DirectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectHeaderView.swift; sourceTree = "<group>"; };
 		D0B98C192BF7B9F000195359 /* DirectFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectFooterView.swift; sourceTree = "<group>"; };
+		D03DEA9C2BFDFA1700BB92FE /* BookmarkResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkResponseDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -473,6 +475,7 @@
 				836814F02BFDB56900472A0B /* GetHistoriesDTO.swift */,
 				836814F22BFDB58000472A0B /* GetPayMoneyDTO.swift */,
 				836814F42BFDB58C00472A0B /* DeleteBookmarkDTO.swift */,
+				D03DEA9C2BFDFA1700BB92FE /* BookmarkResponseDTO.swift */,
 			);
 			path = DTO;
 			sourceTree = "<group>";
@@ -658,6 +661,7 @@
 				D083F0812BF6841D00128DA1 /* DirectModel.swift in Sources */,
 				D083F0732BF5854900128DA1 /* NewsModel.swift in Sources */,
 				D083F0832BF68C6100128DA1 /* SectionBackgroundView.swift in Sources */,
+				D03DEA9D2BFDFA1700BB92FE /* BookmarkResponseDTO.swift in Sources */,
 				D083F07B2BF671F200128DA1 /* PayIssueCell.swift in Sources */,
 				D083F0712BF57A7E00128DA1 /* NewsCell.swift in Sources */,
 				8360DA852BF22D6F002CABBC /* MyAccountHeaderView.swift in Sources */,

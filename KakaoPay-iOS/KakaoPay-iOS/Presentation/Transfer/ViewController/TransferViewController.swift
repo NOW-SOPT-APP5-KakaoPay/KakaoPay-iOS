@@ -9,6 +9,12 @@ import UIKit
 
 final class TransferViewController: UIViewController {
     
+    var recentAccountList: [GetHistoriesData]? {
+        didSet{
+            rootView.updateTableView()
+        }
+    }
+    
     // MARK: - Properties
     
     private var transferData = TransferModel.dummy()
@@ -28,6 +34,7 @@ final class TransferViewController: UIViewController {
         
         setupDelegate()
         setupRegister()
+        getRecentAccountHistoryAPI()
     }
 }
 
@@ -48,8 +55,19 @@ private extension TransferViewController {
         rootView.transferTableView.register(RecentHeaderView.self,
                                             forHeaderFooterViewReuseIdentifier: RecentHeaderView.className)
     }
+    
+    func getRecentAccountHistoryAPI() {
+        HistoriesService.shared.getHistoriesAPI { response in
+            switch response {
+            case .success(let data):
+                guard let data = data as? GetHistoriesDTO else { return }
+                self.recentAccountList = data.data
+            default:
+                return
+            }
+        }
+    }
 }
-
 
 extension TransferViewController: UITableViewDelegate {
     
@@ -78,7 +96,9 @@ extension TransferViewController: UITableViewDataSource {
         default:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: RecentTableViewCell.className, for: indexPath) as? RecentTableViewCell else { return UITableViewCell() }
             cell.selectionStyle = UITableViewCell.SelectionStyle.none
-            cell.bindData(forModel: transferData[indexPath.item])
+            if let recentAccountList {
+                cell.bindData(forModel: recentAccountList[indexPath.item])
+            }
             return cell
         }
     }
