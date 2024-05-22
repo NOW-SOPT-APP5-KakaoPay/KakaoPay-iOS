@@ -13,7 +13,11 @@ final class AssetViewController: UIViewController {
     
     private let rootView = AssetView()
     
-    private let totalMoneyModelData = TotalMoneyModel.dummy()
+     var totalMoneyModelData = GetBalanceData(balance: "") {
+         didSet{
+             rootView.assetCollectionView.reloadData()
+         }
+    }
     private let newsModelDateList = NewsModel.dummy()
     private let investmentAndLoanModelDataList = InvestmentAndLoanModel.dummy()
     private let payIssueModelDataList = PayIssueModel.dummy()
@@ -29,6 +33,7 @@ final class AssetViewController: UIViewController {
         super.viewDidLoad()
 
         setupDelegate()
+        getBalanceAPI()
     }
 }
 
@@ -165,4 +170,19 @@ extension AssetViewController: UICollectionViewDataSource {
 
 extension AssetViewController: UICollectionViewDelegate {
     
+}
+
+extension AssetViewController {
+    func getBalanceAPI() {
+        BalanceService.shared.getBalanceAPI { response in
+            switch response {
+            case .success(let data):
+                guard let data = data as? GetBalanceDTO else { return }
+                self.totalMoneyModelData = data.data
+                print("SUCCESS")
+            default:
+                print("ERROR")
+            }
+        }
+    }
 }
