@@ -15,7 +15,7 @@ final class PaymentView: UIView {
     // MARK: - UI Components
     
     private let tabBar = UIImageView()
-    private let customView = BarcodePaymentView()
+    let customView = BarcodePaymentView()
     
     private let hanaCardImageView = UIImageView()
     private let addCardImageView = UIImageView()
