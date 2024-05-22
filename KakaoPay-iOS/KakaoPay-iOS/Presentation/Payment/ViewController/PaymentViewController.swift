@@ -22,6 +22,7 @@ final class PaymentViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         setaddTarget()
+        getAPI()
     }
 }
 
@@ -34,5 +35,17 @@ private extension PaymentViewController {
     func tappedButton() {
         print("닫기 버튼 클릭")
         navigationController?.popViewController(animated: false)
+    }
+    
+    func getAPI() {
+        BalanceService.shared.getBalanceAPI { response in
+            switch response {
+            case .success(let data):
+                print("SUCCESS")
+            default:
+                print("ERROR")
+            }
+            
+        }
     }
 }

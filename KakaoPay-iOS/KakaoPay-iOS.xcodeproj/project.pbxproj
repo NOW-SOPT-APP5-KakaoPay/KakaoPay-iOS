@@ -68,6 +68,21 @@
 		8360DA902BF3C2BA002CABBC /* PaymentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA8F2BF3C2BA002CABBC /* PaymentModel.swift */; };
 		8360DA922BF3C2C4002CABBC /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA912BF3C2C4002CABBC /* PaymentView.swift */; };
 		8360DA942BF3C2CE002CABBC /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA932BF3C2CE002CABBC /* PaymentViewController.swift */; };
+		836814E82BFDB3B800472A0B /* MoyaPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836814E72BFDB3B800472A0B /* MoyaPlugin.swift */; };
+		836814EB2BFDB52C00472A0B /* GetBalanceDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836814EA2BFDB52C00472A0B /* GetBalanceDTO.swift */; };
+		836814ED2BFDB54200472A0B /* GetPayPointDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836814EC2BFDB54200472A0B /* GetPayPointDTO.swift */; };
+		836814EF2BFDB55300472A0B /* PostBookmarkDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836814EE2BFDB55300472A0B /* PostBookmarkDTO.swift */; };
+		836814F12BFDB56900472A0B /* GetHistoriesDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836814F02BFDB56900472A0B /* GetHistoriesDTO.swift */; };
+		836814F32BFDB58000472A0B /* GetPayMoneyDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836814F22BFDB58000472A0B /* GetPayMoneyDTO.swift */; };
+		836814F52BFDB58C00472A0B /* DeleteBookmarkDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836814F42BFDB58C00472A0B /* DeleteBookmarkDTO.swift */; };
+		836814F82BFDC90D00472A0B /* BaseAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836814F72BFDC90D00472A0B /* BaseAPIService.swift */; };
+		836814FA2BFDCEC600472A0B /* Config.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836814F92BFDCEC600472A0B /* Config.swift */; };
+		836814FC2BFDCFE700472A0B /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836814FB2BFDCFE700472A0B /* APIService.swift */; };
+		836814FE2BFDD25E00472A0B /* BalanceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836814FD2BFDD25D00472A0B /* BalanceService.swift */; };
+		836815002BFDD81F00472A0B /* PayPointService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836814FF2BFDD81F00472A0B /* PayPointService.swift */; };
+		836815022BFDD89200472A0B /* HistoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836815012BFDD89200472A0B /* HistoriesService.swift */; };
+		836815042BFDD8EB00472A0B /* PayMoneyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836815032BFDD8EB00472A0B /* PayMoneyService.swift */; };
+		836815072BFDD97700472A0B /* BookmarkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836815062BFDD97700472A0B /* BookmarkService.swift */; };
 		83E327C12BF5CFA400C7891C /* CustomDivideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E327C02BF5CFA400C7891C /* CustomDivideView.swift */; };
 		83FA54422BF5200000F4C1CC /* BarcodePaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA54412BF5200000F4C1CC /* BarcodePaymentView.swift */; };
 /* End PBXBuildFile section */
@@ -132,6 +147,21 @@
 		8360DA8F2BF3C2BA002CABBC /* PaymentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentModel.swift; sourceTree = "<group>"; };
 		8360DA912BF3C2C4002CABBC /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
 		8360DA932BF3C2CE002CABBC /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
+		836814E72BFDB3B800472A0B /* MoyaPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaPlugin.swift; sourceTree = "<group>"; };
+		836814EA2BFDB52C00472A0B /* GetBalanceDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetBalanceDTO.swift; sourceTree = "<group>"; };
+		836814EC2BFDB54200472A0B /* GetPayPointDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPayPointDTO.swift; sourceTree = "<group>"; };
+		836814EE2BFDB55300472A0B /* PostBookmarkDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostBookmarkDTO.swift; sourceTree = "<group>"; };
+		836814F02BFDB56900472A0B /* GetHistoriesDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetHistoriesDTO.swift; sourceTree = "<group>"; };
+		836814F22BFDB58000472A0B /* GetPayMoneyDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetPayMoneyDTO.swift; sourceTree = "<group>"; };
+		836814F42BFDB58C00472A0B /* DeleteBookmarkDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteBookmarkDTO.swift; sourceTree = "<group>"; };
+		836814F72BFDC90D00472A0B /* BaseAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseAPIService.swift; sourceTree = "<group>"; };
+		836814F92BFDCEC600472A0B /* Config.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Config.swift; sourceTree = "<group>"; };
+		836814FB2BFDCFE700472A0B /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		836814FD2BFDD25D00472A0B /* BalanceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalanceService.swift; sourceTree = "<group>"; };
+		836814FF2BFDD81F00472A0B /* PayPointService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayPointService.swift; sourceTree = "<group>"; };
+		836815012BFDD89200472A0B /* HistoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoriesService.swift; sourceTree = "<group>"; };
+		836815032BFDD8EB00472A0B /* PayMoneyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayMoneyService.swift; sourceTree = "<group>"; };
+		836815062BFDD97700472A0B /* BookmarkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkService.swift; sourceTree = "<group>"; };
 		83E327C02BF5CFA400C7891C /* CustomDivideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivideView.swift; sourceTree = "<group>"; };
 		83FA54412BF5200000F4C1CC /* BarcodePaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodePaymentView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -154,6 +184,7 @@
 		83474A6E2BEE6160009B9C48 = {
 			isa = PBXGroup;
 			children = (
+				836814F92BFDCEC600472A0B /* Config.swift */,
 				83474A792BEE6160009B9C48 /* KakaoPay-iOS */,
 				83474A782BEE6160009B9C48 /* Products */,
 			);
@@ -194,6 +225,8 @@
 		83474A902BEE62CB009B9C48 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				836814F62BFDC8E200472A0B /* Service */,
+				836814E92BFDB51300472A0B /* DTO */,
 				83474AAD2BEE6604009B9C48 /* Base */,
 				83474AA62BEE6569009B9C48 /* Home */,
 			);
@@ -283,6 +316,7 @@
 			isa = PBXGroup;
 			children = (
 				83474AAE2BEE6631009B9C48 /* NetworkResult.swift */,
+				836814E72BFDB3B800472A0B /* MoyaPlugin.swift */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -498,6 +532,33 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		836814E92BFDB51300472A0B /* DTO */ = {
+			isa = PBXGroup;
+			children = (
+				836814EA2BFDB52C00472A0B /* GetBalanceDTO.swift */,
+				836814EC2BFDB54200472A0B /* GetPayPointDTO.swift */,
+				836814EE2BFDB55300472A0B /* PostBookmarkDTO.swift */,
+				836814F02BFDB56900472A0B /* GetHistoriesDTO.swift */,
+				836814F22BFDB58000472A0B /* GetPayMoneyDTO.swift */,
+				836814F42BFDB58C00472A0B /* DeleteBookmarkDTO.swift */,
+			);
+			path = DTO;
+			sourceTree = "<group>";
+		};
+		836814F62BFDC8E200472A0B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				836814F72BFDC90D00472A0B /* BaseAPIService.swift */,
+				836814FB2BFDCFE700472A0B /* APIService.swift */,
+				836814FD2BFDD25D00472A0B /* BalanceService.swift */,
+				836814FF2BFDD81F00472A0B /* PayPointService.swift */,
+				836815012BFDD89200472A0B /* HistoriesService.swift */,
+				836815032BFDD8EB00472A0B /* PayMoneyService.swift */,
+				836815062BFDD97700472A0B /* BookmarkService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -587,6 +648,8 @@
 				D083F07F2BF681C300128DA1 /* DirectCell.swift in Sources */,
 				83474AAC2BEE65D4009B9C48 /* GetHomeResponseDTO.swift in Sources */,
 				D083F07D2BF6744B00128DA1 /* PayIssueModel.swift in Sources */,
+				836814EF2BFDB55300472A0B /* PostBookmarkDTO.swift in Sources */,
+				836815042BFDD8EB00472A0B /* PayMoneyService.swift in Sources */,
 				8360DA832BF22C54002CABBC /* RecentTableViewCell.swift in Sources */,
 				8360DA922BF3C2C4002CABBC /* PaymentView.swift in Sources */,
 				83E327C12BF5CFA400C7891C /* CustomDivideView.swift in Sources */,
@@ -606,6 +669,10 @@
 				83FA54422BF5200000F4C1CC /* BarcodePaymentView.swift in Sources */,
 				D083F0692BF5518E00128DA1 /* AccountFooterView.swift in Sources */,
 				8360DA742BF2210D002CABBC /* TransferViewController.swift in Sources */,
+				836814E82BFDB3B800472A0B /* MoyaPlugin.swift in Sources */,
+				836814EB2BFDB52C00472A0B /* GetBalanceDTO.swift in Sources */,
+				836814F32BFDB58000472A0B /* GetPayMoneyDTO.swift in Sources */,
+				836814F52BFDB58C00472A0B /* DeleteBookmarkDTO.swift in Sources */,
 				83474ABB2BEE677C009B9C48 /* FontLiterals.swift in Sources */,
 				8360DA8A2BF25FF3002CABBC /* TransferModel.swift in Sources */,
 				83474AC12BEE684A009B9C48 /* UIView+.swift in Sources */,
@@ -613,14 +680,20 @@
 				8360DA762BF22116002CABBC /* TransferView.swift in Sources */,
 				83474AC52BEE688E009B9C48 /* NSObject+.swift in Sources */,
 				8360DA6F2BF1D3EA002CABBC /* TabBarController.swift in Sources */,
+				836814ED2BFDB54200472A0B /* GetPayPointDTO.swift in Sources */,
+				836815072BFDD97700472A0B /* BookmarkService.swift in Sources */,
 				D083F0602BF5488C00128DA1 /* AssetView.swift in Sources */,
 				83474AC32BEE6878009B9C48 /* UIViewController+.swift in Sources */,
 				83474ABF2BEE6824009B9C48 /* UITextField+.swift in Sources */,
 				D083F06F2BF558F600128DA1 /* CompositionalFactory.swift in Sources */,
 				D083F06B2BF557BC00128DA1 /* MoreView.swift in Sources */,
 				8360DA7E2BF22581002CABBC /* TransferHeaderView.swift in Sources */,
+				836814F82BFDC90D00472A0B /* BaseAPIService.swift in Sources */,
+				836815002BFDD81F00472A0B /* PayPointService.swift in Sources */,
 				83474A992BEE6326009B9C48 /* HomeView.swift in Sources */,
+				836814F12BFDB56900472A0B /* GetHistoriesDTO.swift in Sources */,
 				8360DA812BF22C1F002CABBC /* MyAccountTableViewCell.swift in Sources */,
+				836814FE2BFDD25E00472A0B /* BalanceService.swift in Sources */,
 				83474ACB2BEE68FC009B9C48 /* UIImageView+.swift in Sources */,
 				D083F05C2BF546F800128DA1 /* TotalMoneyCell.swift in Sources */,
 				D083F0632BF548AB00128DA1 /* TotalMoneyModel.swift in Sources */,
@@ -628,6 +701,9 @@
 				D083F05E2BF5486600128DA1 /* AssetViewController.swift in Sources */,
 				83474ABD2BEE6815009B9C48 /* UIStackView+.swift in Sources */,
 				8360DA942BF3C2CE002CABBC /* PaymentViewController.swift in Sources */,
+				836814FC2BFDCFE700472A0B /* APIService.swift in Sources */,
+				836815022BFDD89200472A0B /* HistoriesService.swift in Sources */,
+				836814FA2BFDCEC600472A0B /* Config.swift in Sources */,
 				D083F0772BF6481800128DA1 /* investmentAndLoanCell.swift in Sources */,
 				8360DA6D2BF1CBD5002CABBC /* TabBarItem.swift in Sources */,
 				83474A7B2BEE6160009B9C48 /* AppDelegate.swift in Sources */,
@@ -767,6 +843,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://www.thqjxhs.p-e.kr/";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X395BM5WW7;
@@ -794,6 +871,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				BASE_URL = "https://www.thqjxhs.p-e.kr/";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = X395BM5WW7;

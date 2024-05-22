@@ -19,6 +19,7 @@ enum NetworkResult<T> {
     case notFound           // NOT FOUND (404)
     case unProcessable      // UNPROCESSABLE_ENTITY (422)
     case serverErr          // INTERNAL_SERVER_ERROR (500번대)
+    case pathErr
     
     var stateDescription: String {
         switch self {
@@ -32,6 +33,7 @@ enum NetworkResult<T> {
         case .notFound: return "🔥 NOT FOUND 🔥"
         case .unProcessable: return "🔥 UNPROCESSABLE ENTITY 🔥"
         case .serverErr: return "🔥 INTERNAL SERVER_ERROR 🔥"
+        case .pathErr: return "🔥 PATH ERROR 🔥"
         }
     }
 }
