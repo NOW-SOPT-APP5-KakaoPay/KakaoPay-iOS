@@ -32,4 +32,12 @@ enum StringLiterals {
         static let borrowesMoney = "빌린 돈"
         static let assetDirect = "자산 바로가기"
     }
+    
+    enum Payment {
+        static let savePaypoint = "페이포인트 0.5% 적립"
+        static let paymoney = "페이머니"
+        static let paypoint = "페이포인트 사용"
+        static let availablecoupon  = "사용 가능한 쿠폰"
+        static let kakaoPayCard = "카카오페이머니"
+    }
 }
