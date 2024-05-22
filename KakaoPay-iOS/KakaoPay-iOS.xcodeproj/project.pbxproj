@@ -64,7 +64,6 @@
 		836815072BFDD97700472A0B /* BookmarkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836815062BFDD97700472A0B /* BookmarkService.swift */; };
 		83E327C12BF5CFA400C7891C /* CustomDivideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E327C02BF5CFA400C7891C /* CustomDivideView.swift */; };
 		83FA54422BF5200000F4C1CC /* BarcodePaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA54412BF5200000F4C1CC /* BarcodePaymentView.swift */; };
-		D03DEA9D2BFDFA1700BB92FE /* BookmarkResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DEA9C2BFDFA1700BB92FE /* BookmarkResponseDTO.swift */; };
 		D083F05C2BF546F800128DA1 /* TotalMoneyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F05B2BF546F800128DA1 /* TotalMoneyCell.swift */; };
 		D083F05E2BF5486600128DA1 /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F05D2BF5486600128DA1 /* AssetViewController.swift */; };
 		D083F0602BF5488C00128DA1 /* AssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F05F2BF5488C00128DA1 /* AssetView.swift */; };
@@ -86,6 +85,7 @@
 		D083F0832BF68C6100128DA1 /* SectionBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0822BF68C6100128DA1 /* SectionBackgroundView.swift */; };
 		D0B98C182BF7B7FF00195359 /* DirectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B98C172BF7B7FF00195359 /* DirectHeaderView.swift */; };
 		D0B98C1A2BF7B9F000195359 /* DirectFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B98C192BF7B9F000195359 /* DirectFooterView.swift */; };
+		D03DEA9D2BFDFA1700BB92FE /* BookmarkResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DEA9C2BFDFA1700BB92FE /* BookmarkResponseDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -144,7 +144,6 @@
 		836815062BFDD97700472A0B /* BookmarkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkService.swift; sourceTree = "<group>"; };
 		83E327C02BF5CFA400C7891C /* CustomDivideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivideView.swift; sourceTree = "<group>"; };
 		83FA54412BF5200000F4C1CC /* BarcodePaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodePaymentView.swift; sourceTree = "<group>"; };
-		D03DEA9C2BFDFA1700BB92FE /* BookmarkResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkResponseDTO.swift; sourceTree = "<group>"; };
 		D083F05B2BF546F800128DA1 /* TotalMoneyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalMoneyCell.swift; sourceTree = "<group>"; };
 		D083F05D2BF5486600128DA1 /* AssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
 		D083F05F2BF5488C00128DA1 /* AssetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetView.swift; sourceTree = "<group>"; };
@@ -166,6 +165,7 @@
 		D083F0822BF68C6100128DA1 /* SectionBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionBackgroundView.swift; sourceTree = "<group>"; };
 		D0B98C172BF7B7FF00195359 /* DirectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectHeaderView.swift; sourceTree = "<group>"; };
 		D0B98C192BF7B9F000195359 /* DirectFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectFooterView.swift; sourceTree = "<group>"; };
+		D03DEA9C2BFDFA1700BB92FE /* BookmarkResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkResponseDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */

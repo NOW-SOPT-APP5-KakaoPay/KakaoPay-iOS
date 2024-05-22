@@ -59,8 +59,7 @@ extension TotalMoneyCell {
         }
         
         moneyLabel.do {
-            $0.text = "0원"
-            $0.font = .appleSemiBold(size: 14)
+            $0.font = .appleSemiBold(size: 18)
             $0.textColor = .kakaoBlack
             $0.textAlignment = .center
         }
@@ -103,7 +102,7 @@ extension TotalMoneyCell {
     
     //MARK: - Method
     
-    func bindData(_ data: TotalMoneyModel) {
-        moneyLabel.text = data.totalMoney
+    func bindData(_ data: GetBalanceData) {
+        moneyLabel.text = data.balance + "원"
     }
 }

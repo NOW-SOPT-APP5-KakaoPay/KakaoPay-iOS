@@ -8,11 +8,15 @@
 import Foundation
 
 struct GetPayPointDTO: Codable {
-    let code: Int
+    let status: Int
     let message: String
     let data: GetPayPointData
 }
 
 struct GetPayPointData: Codable {
     let payPoint: String
+    
+    enum CodingKeys: String, CodingKey {
+        case payPoint = "payPoint"
+    }
 }

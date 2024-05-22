@@ -8,11 +8,15 @@
 import Foundation
 
 struct GetBalanceDTO: Codable {
-    let code: Int
+    let status: Int
     let message: String
     let data: GetBalanceData
 }
 
 struct GetBalanceData: Codable {
     let balance: String
+    
+    enum CodingKeys: String, CodingKey {
+        case balance = "payMoney"
+    }
 }

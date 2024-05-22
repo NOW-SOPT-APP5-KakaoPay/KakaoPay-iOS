@@ -14,7 +14,7 @@ final class AssetView: UIView {
     
     // MARK: - UI Components
     
-    private let assetCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
+    let assetCollectionView = UICollectionView(frame: .zero, collectionViewLayout: UICollectionViewLayout())
     
     // MARK: - Life Cycles
     

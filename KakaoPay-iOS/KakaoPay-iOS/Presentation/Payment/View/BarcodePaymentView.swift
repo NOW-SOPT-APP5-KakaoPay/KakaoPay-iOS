@@ -40,7 +40,6 @@ final class BarcodePaymentView: UIView {
         setupStyle()
         setupHierarchy()
         setupLayout()
-        bindData()
     }
     
     @available(*, unavailable)
@@ -192,8 +191,11 @@ private extension BarcodePaymentView {
 }
 
 extension BarcodePaymentView {
-    func bindData() {
-        paymoney.text = "50,000원"
-        paypoint.text = "5,000원"
+    func bindPayMoney(forModel: GetPayMoneyData) {
+        paymoney.text = forModel.payMoney + "원"
+    }
+    
+    func bindPayPoint(forModel: GetPayPointData) {
+        paypoint.text = forModel.payPoint + "원"
     }
 }
