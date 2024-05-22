@@ -14,12 +14,14 @@ final class TransferHeaderView: UIView {
     
     // MARK: - Properties
     
+    private let halfWidth = UIScreen.main.bounds.size.width / 2
+    
+    // MARK: - UI Components
+    
     private let accountTransferButton = UIButton()
     private let friendTransferButton = UIButton()
     private let blackLineView = UIImageView()
     private let grayLineView = UIImageView()
-    
-    private let halfWidth = UIScreen.main.bounds.size.width / 2
     
     // MARK: - Life Cycle
     
@@ -34,15 +36,15 @@ final class TransferHeaderView: UIView {
         super.init(coder: coder)
     }
     
-    func setView() {
+    private func setView() {
         setupStyle()
         setupHierarchy()
         setupLayout()
     }
-    
-    // MARK: - set up Style
-    
-    private func setupStyle() {
+}
+
+private extension TransferHeaderView {
+    func setupStyle() {
         accountTransferButton.do {
             $0.setTitle("계좌 송금", for: .normal)
             $0.setTitleColor(.kakaoBlack, for: .normal)
@@ -64,18 +66,14 @@ final class TransferHeaderView: UIView {
         }
     }
     
-    // MARK: - set up Hierarchy
-    
-    private func setupHierarchy() {
+    func setupHierarchy() {
         addSubviews(accountTransferButton,
                     friendTransferButton,
                     blackLineView,
                     grayLineView)
     }
     
-    // MARK: - set up Layout
-    
-    private func setupLayout() {
+    func setupLayout() {
         accountTransferButton.snp.makeConstraints {
             $0.top.equalToSuperview().inset(63)
             $0.leading.equalToSuperview()

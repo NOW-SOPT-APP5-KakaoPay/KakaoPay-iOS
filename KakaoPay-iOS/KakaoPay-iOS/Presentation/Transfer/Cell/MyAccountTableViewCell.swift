@@ -29,7 +29,7 @@ final class MyAccountTableViewCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func setView() {
+    private func setView() {
         setupStyle()
         setupHierarchy()
         setupLayout()
