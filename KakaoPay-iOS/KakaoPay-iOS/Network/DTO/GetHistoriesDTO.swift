@@ -8,9 +8,9 @@
 import Foundation
 
 struct GetHistoriesDTO: Codable {
-    let code: Int
+    let status: Int
     let message: String
-    let data: GetHistoriesData
+    let data: [GetHistoriesData]
 }
 
 struct GetHistoriesData: Codable {
