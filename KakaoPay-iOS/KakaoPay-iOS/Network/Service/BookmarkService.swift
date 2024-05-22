@@ -22,7 +22,7 @@ extension BookmarkService {
             case .success(let response):
                 let statusCode = response.statusCode
                 let data = response.data
-                let networkResult = self.judgeStatus(by: statusCode, data, PostBookmarkDTO.self)
+                let networkResult = self.judgeStatus(by: statusCode, data, BookmarkResponseDTO.self)
                 completion(networkResult)
                 
             case .failure:
@@ -37,7 +37,7 @@ extension BookmarkService {
             case .success(let response):
                 let statusCode = response.statusCode
                 let data = response.data
-                let networkResult = self.judgeStatus(by: statusCode, data, DeleteBookmarkDTO.self)
+                let networkResult = self.judgeStatus(by: statusCode, data, BookmarkResponseDTO.self)
                 completion(networkResult)
                 
             case .failure:
