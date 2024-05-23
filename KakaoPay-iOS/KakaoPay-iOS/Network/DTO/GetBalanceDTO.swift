@@ -15,8 +15,4 @@ struct GetBalanceDTO: Codable {
 
 struct GetBalanceData: Codable {
     let balance: String
-    
-    enum CodingKeys: String, CodingKey {
-        case balance = "payMoney"
-    }
 }
