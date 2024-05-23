@@ -27,6 +27,36 @@ extension UIViewController {
         view.addGestureRecognizer(tap)
     }
     
+    /// statusBar 색상 변경
+//    func changeStatusBarBgColor(bgColor: UIColor?) {
+//           if #available(iOS 13.0, *) {
+//               let window = UIApplication.shared.windows.first
+//               let statusBarManager = window?.windowScene?.statusBarManager
+//               
+//               let statusBarView = UIView(frame: statusBarManager?.statusBarFrame ?? .zero)
+//               statusBarView.backgroundColor = bgColor
+//               
+//               window?.addSubview(statusBarView)
+//           } else {
+//               let statusBarView = UIApplication.shared.value(forKey: "statusBar") as? UIView
+//               statusBarView?.backgroundColor = bgColor
+//           }
+//       }
+    func changeStatusBarBgColor(statusBarColor: UIColor?) {
+        guard #available(iOS 13.0, *) else {
+            guard let statusBar = UIApplication.shared.value(forKey: "statusBar") as? UIView else { return }
+            statusBar.backgroundColor = statusBarColor
+            return
+        }
+
+        guard let window = UIApplication.shared.windows.first,
+              let statusBarManager = window.windowScene?.statusBarManager else { return }
+
+        let statusBarView = UIView(frame: statusBarManager.statusBarFrame)
+        statusBarView.backgroundColor = statusBarColor
+        window.addSubview(statusBarView)
+    }
+    
     @objc func dismissKeyboard() {
         view.endEditing(true)
     }

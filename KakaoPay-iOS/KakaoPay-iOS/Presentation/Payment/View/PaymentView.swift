@@ -100,7 +100,7 @@ private extension PaymentView {
     
     func setupLayout() {
         tabBar.snp.makeConstraints {
-            $0.top.equalToSuperview().inset(65)
+            $0.top.equalToSuperview().inset(11)
             $0.centerX.equalToSuperview()
         }
         

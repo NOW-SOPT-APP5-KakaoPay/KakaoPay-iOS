@@ -75,25 +75,25 @@ private extension TransferHeaderView {
     
     func setupLayout() {
         accountTransferButton.snp.makeConstraints {
-            $0.top.equalToSuperview().inset(63)
+            $0.centerY.equalToSuperview()
             $0.leading.equalToSuperview()
             $0.width.equalTo(halfWidth)
         }
         
         blackLineView.snp.makeConstraints {
-            $0.top.equalTo(accountTransferButton.snp.bottom)
+            $0.bottom.equalToSuperview()
             $0.leading.equalTo(accountTransferButton)
             $0.width.equalTo(halfWidth)
         }
         
         friendTransferButton.snp.makeConstraints {
-            $0.top.equalToSuperview().inset(63)
+            $0.centerY.equalToSuperview()
             $0.trailing.equalToSuperview()
             $0.width.equalTo(halfWidth)
         }
         
         grayLineView.snp.makeConstraints {
-            $0.top.equalTo(friendTransferButton.snp.bottom)
+            $0.bottom.equalToSuperview()
             $0.leading.equalTo(friendTransferButton)
             $0.width.equalTo(halfWidth)
         }

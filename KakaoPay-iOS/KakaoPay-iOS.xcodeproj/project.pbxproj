@@ -62,8 +62,17 @@
 		836815022BFDD89200472A0B /* HistoriesService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836815012BFDD89200472A0B /* HistoriesService.swift */; };
 		836815042BFDD8EB00472A0B /* PayMoneyService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836815032BFDD8EB00472A0B /* PayMoneyService.swift */; };
 		836815072BFDD97700472A0B /* BookmarkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836815062BFDD97700472A0B /* BookmarkService.swift */; };
+		8368150C2BFE35D800472A0B /* HomePayMoneyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8368150B2BFE35D800472A0B /* HomePayMoneyCollectionViewCell.swift */; };
+		8368150E2BFE364C00472A0B /* HomeMenuCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8368150D2BFE364C00472A0B /* HomeMenuCollectionViewCell.swift */; };
+		836815102BFE365D00472A0B /* HomeTotalCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8368150F2BFE365D00472A0B /* HomeTotalCollectionViewCell.swift */; };
+		836815122BFE368300472A0B /* HomeSendMoneyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836815112BFE368300472A0B /* HomeSendMoneyCollectionViewCell.swift */; };
+		836815142BFE36A400472A0B /* HomeGetMoneyCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836815132BFE36A400472A0B /* HomeGetMoneyCollectionViewCell.swift */; };
+		836815162BFE622200472A0B /* HomePayPointCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836815152BFE622200472A0B /* HomePayPointCollectionViewCell.swift */; };
+		836815182BFE624B00472A0B /* HomeScoreCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836815172BFE624B00472A0B /* HomeScoreCollectionViewCell.swift */; };
+		8368151A2BFF09C400472A0B /* HomeBottomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836815192BFF09C400472A0B /* HomeBottomCollectionViewCell.swift */; };
 		83E327C12BF5CFA400C7891C /* CustomDivideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83E327C02BF5CFA400C7891C /* CustomDivideView.swift */; };
 		83FA54422BF5200000F4C1CC /* BarcodePaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83FA54412BF5200000F4C1CC /* BarcodePaymentView.swift */; };
+		D03DEA9D2BFDFA1700BB92FE /* BookmarkResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DEA9C2BFDFA1700BB92FE /* BookmarkResponseDTO.swift */; };
 		D083F05C2BF546F800128DA1 /* TotalMoneyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F05B2BF546F800128DA1 /* TotalMoneyCell.swift */; };
 		D083F05E2BF5486600128DA1 /* AssetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F05D2BF5486600128DA1 /* AssetViewController.swift */; };
 		D083F0602BF5488C00128DA1 /* AssetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F05F2BF5488C00128DA1 /* AssetView.swift */; };
@@ -85,7 +94,6 @@
 		D083F0832BF68C6100128DA1 /* SectionBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D083F0822BF68C6100128DA1 /* SectionBackgroundView.swift */; };
 		D0B98C182BF7B7FF00195359 /* DirectHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B98C172BF7B7FF00195359 /* DirectHeaderView.swift */; };
 		D0B98C1A2BF7B9F000195359 /* DirectFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0B98C192BF7B9F000195359 /* DirectFooterView.swift */; };
-		D03DEA9D2BFDFA1700BB92FE /* BookmarkResponseDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = D03DEA9C2BFDFA1700BB92FE /* BookmarkResponseDTO.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -142,8 +150,17 @@
 		836815012BFDD89200472A0B /* HistoriesService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoriesService.swift; sourceTree = "<group>"; };
 		836815032BFDD8EB00472A0B /* PayMoneyService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayMoneyService.swift; sourceTree = "<group>"; };
 		836815062BFDD97700472A0B /* BookmarkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkService.swift; sourceTree = "<group>"; };
+		8368150B2BFE35D800472A0B /* HomePayMoneyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePayMoneyCollectionViewCell.swift; sourceTree = "<group>"; };
+		8368150D2BFE364C00472A0B /* HomeMenuCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeMenuCollectionViewCell.swift; sourceTree = "<group>"; };
+		8368150F2BFE365D00472A0B /* HomeTotalCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTotalCollectionViewCell.swift; sourceTree = "<group>"; };
+		836815112BFE368300472A0B /* HomeSendMoneyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeSendMoneyCollectionViewCell.swift; sourceTree = "<group>"; };
+		836815132BFE36A400472A0B /* HomeGetMoneyCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeGetMoneyCollectionViewCell.swift; sourceTree = "<group>"; };
+		836815152BFE622200472A0B /* HomePayPointCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomePayPointCollectionViewCell.swift; sourceTree = "<group>"; };
+		836815172BFE624B00472A0B /* HomeScoreCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeScoreCollectionViewCell.swift; sourceTree = "<group>"; };
+		836815192BFF09C400472A0B /* HomeBottomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBottomCollectionViewCell.swift; sourceTree = "<group>"; };
 		83E327C02BF5CFA400C7891C /* CustomDivideView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomDivideView.swift; sourceTree = "<group>"; };
 		83FA54412BF5200000F4C1CC /* BarcodePaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BarcodePaymentView.swift; sourceTree = "<group>"; };
+		D03DEA9C2BFDFA1700BB92FE /* BookmarkResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkResponseDTO.swift; sourceTree = "<group>"; };
 		D083F05B2BF546F800128DA1 /* TotalMoneyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TotalMoneyCell.swift; sourceTree = "<group>"; };
 		D083F05D2BF5486600128DA1 /* AssetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetViewController.swift; sourceTree = "<group>"; };
 		D083F05F2BF5488C00128DA1 /* AssetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetView.swift; sourceTree = "<group>"; };
@@ -165,7 +182,6 @@
 		D083F0822BF68C6100128DA1 /* SectionBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionBackgroundView.swift; sourceTree = "<group>"; };
 		D0B98C172BF7B7FF00195359 /* DirectHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectHeaderView.swift; sourceTree = "<group>"; };
 		D0B98C192BF7B9F000195359 /* DirectFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectFooterView.swift; sourceTree = "<group>"; };
-		D03DEA9C2BFDFA1700BB92FE /* BookmarkResponseDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarkResponseDTO.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +285,14 @@
 			isa = PBXGroup;
 			children = (
 				83474AA42BEE6529009B9C48 /* HomeCollectionViewCell.swift */,
+				8368150B2BFE35D800472A0B /* HomePayMoneyCollectionViewCell.swift */,
+				8368150D2BFE364C00472A0B /* HomeMenuCollectionViewCell.swift */,
+				8368150F2BFE365D00472A0B /* HomeTotalCollectionViewCell.swift */,
+				836815112BFE368300472A0B /* HomeSendMoneyCollectionViewCell.swift */,
+				836815132BFE36A400472A0B /* HomeGetMoneyCollectionViewCell.swift */,
+				836815152BFE622200472A0B /* HomePayPointCollectionViewCell.swift */,
+				836815172BFE624B00472A0B /* HomeScoreCollectionViewCell.swift */,
+				836815192BFF09C400472A0B /* HomeBottomCollectionViewCell.swift */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -645,6 +669,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				836815182BFE624B00472A0B /* HomeScoreCollectionViewCell.swift in Sources */,
 				83474AC72BEE68A8009B9C48 /* UILabel+.swift in Sources */,
 				83474AA52BEE6529009B9C48 /* HomeCollectionViewCell.swift in Sources */,
 				83474A9B2BEE632F009B9C48 /* HomeViewController.swift in Sources */,
@@ -662,11 +687,13 @@
 				D083F0732BF5854900128DA1 /* NewsModel.swift in Sources */,
 				D083F0832BF68C6100128DA1 /* SectionBackgroundView.swift in Sources */,
 				D03DEA9D2BFDFA1700BB92FE /* BookmarkResponseDTO.swift in Sources */,
+				836815122BFE368300472A0B /* HomeSendMoneyCollectionViewCell.swift in Sources */,
 				D083F07B2BF671F200128DA1 /* PayIssueCell.swift in Sources */,
 				D083F0712BF57A7E00128DA1 /* NewsCell.swift in Sources */,
 				8360DA852BF22D6F002CABBC /* MyAccountHeaderView.swift in Sources */,
 				83474AC92BEE68DC009B9C48 /* UIButton+.swift in Sources */,
 				8360DA902BF3C2BA002CABBC /* PaymentModel.swift in Sources */,
+				8368150E2BFE364C00472A0B /* HomeMenuCollectionViewCell.swift in Sources */,
 				83474AAF2BEE6631009B9C48 /* NetworkResult.swift in Sources */,
 				83474A7F2BEE6160009B9C48 /* ViewController.swift in Sources */,
 				83474AAA2BEE65B5009B9C48 /* HomeAPIService.swift in Sources */,
@@ -674,6 +701,7 @@
 				D083F0692BF5518E00128DA1 /* AccountFooterView.swift in Sources */,
 				8360DA742BF2210D002CABBC /* TransferViewController.swift in Sources */,
 				836814E82BFDB3B800472A0B /* MoyaPlugin.swift in Sources */,
+				836815162BFE622200472A0B /* HomePayPointCollectionViewCell.swift in Sources */,
 				836814EB2BFDB52C00472A0B /* GetBalanceDTO.swift in Sources */,
 				836814F32BFDB58000472A0B /* GetPayMoneyDTO.swift in Sources */,
 				836814F52BFDB58C00472A0B /* DeleteBookmarkDTO.swift in Sources */,
@@ -696,7 +724,10 @@
 				836815002BFDD81F00472A0B /* PayPointService.swift in Sources */,
 				83474A992BEE6326009B9C48 /* HomeView.swift in Sources */,
 				836814F12BFDB56900472A0B /* GetHistoriesDTO.swift in Sources */,
+				8368150C2BFE35D800472A0B /* HomePayMoneyCollectionViewCell.swift in Sources */,
+				836815142BFE36A400472A0B /* HomeGetMoneyCollectionViewCell.swift in Sources */,
 				8360DA812BF22C1F002CABBC /* MyAccountTableViewCell.swift in Sources */,
+				8368151A2BFF09C400472A0B /* HomeBottomCollectionViewCell.swift in Sources */,
 				836814FE2BFDD25E00472A0B /* BalanceService.swift in Sources */,
 				83474ACB2BEE68FC009B9C48 /* UIImageView+.swift in Sources */,
 				D083F05C2BF546F800128DA1 /* TotalMoneyCell.swift in Sources */,
@@ -711,6 +742,7 @@
 				D083F0772BF6481800128DA1 /* investmentAndLoanCell.swift in Sources */,
 				8360DA6D2BF1CBD5002CABBC /* TabBarItem.swift in Sources */,
 				83474A7B2BEE6160009B9C48 /* AppDelegate.swift in Sources */,
+				836815102BFE365D00472A0B /* HomeTotalCollectionViewCell.swift in Sources */,
 				D0B98C182BF7B7FF00195359 /* DirectHeaderView.swift in Sources */,
 				D0B98C1A2BF7B9F000195359 /* DirectFooterView.swift in Sources */,
 				83474A7D2BEE6160009B9C48 /* SceneDelegate.swift in Sources */,

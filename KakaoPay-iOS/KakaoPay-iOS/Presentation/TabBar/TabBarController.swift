@@ -31,7 +31,7 @@ final class TabBarController: UITabBarController {
 
 private extension TabBarController {
     func setupStyle() {
-        view.backgroundColor = .kakaoWhite
+        view.backgroundColor = .kakaoGray200
         tabBar.backgroundColor = .kakaoWhite
         tabBar.unselectedItemTintColor = .kakaoGray600
         tabBar.tintColor = .kakaoBlack

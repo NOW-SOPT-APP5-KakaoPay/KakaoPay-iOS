@@ -43,6 +43,7 @@ private extension TransferView {
         transferTableView.do {
             $0.backgroundColor = .clear
             $0.separatorStyle = .none
+            $0.sectionHeaderTopPadding = 9
         }
         
         qrButton.do {
@@ -65,13 +66,13 @@ private extension TransferView {
     
     func setLayout() {
         headerView.snp.makeConstraints {
-            $0.top.equalToSuperview().inset(10)
+            $0.top.equalTo(safeAreaLayoutGuide)
             $0.horizontalEdges.equalToSuperview()
             $0.height.equalTo(44)
         }
         
         transferTableView.snp.makeConstraints {
-            $0.top.equalTo(headerView.snp.bottom).offset(10)
+            $0.top.equalTo(headerView.snp.bottom)
             $0.horizontalEdges.equalToSuperview()
             $0.height.equalTo(700)
         }

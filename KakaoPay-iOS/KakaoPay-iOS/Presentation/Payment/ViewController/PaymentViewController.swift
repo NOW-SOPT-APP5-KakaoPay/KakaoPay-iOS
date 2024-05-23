@@ -21,12 +21,18 @@ final class PaymentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setaddTarget()
         
+        view.backgroundColor = .kakaoYellow
+        
+        setaddTarget()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        self.tabBarController?.tabBar.isHidden = true
+        changeStatusBarBgColor(statusBarColor: .kakaoYellow)
+        setNavigationBar()
         
         getPayPointAPI()
         getPayMoneyAPI()
@@ -34,6 +40,70 @@ final class PaymentViewController: UIViewController {
 }
 
 private extension PaymentViewController {
+
+    func setNavigationBar() {
+        if let navigationBar = self.navigationController?.navigationBar {
+            let emptyImage = UIImage()
+            navigationBar.backgroundColor = .kakaoYellow
+            navigationBar.barTintColor = .kakaoYellow
+            navigationBar.isTranslucent = false
+            navigationBar.shadowImage = emptyImage
+            navigationBar.tintColor = .kakaoBlack
+        }
+        
+        let mainBarButton = UIBarButtonItem(image: .icNavigationKakaopay, style: .plain, target: self, action: nil)
+        
+        let worldPayBarButton = UIButton()
+        worldPayBarButton.setImage(.icNavigationWorldpay, for: .normal)
+        
+        let settingBarButton = UIButton()
+        settingBarButton.setImage(.icNavigationSetting, for: .normal)
+        
+        let stackView = UIStackView(arrangedSubviews: [worldPayBarButton, settingBarButton])
+        stackView.axis = .horizontal
+        stackView.spacing = 15
+        stackView.alignment = .center
+        stackView.distribution = .equalSpacing
+        let customView = UIBarButtonItem(customView: stackView)
+        
+        self.navigationItem.leftBarButtonItem = mainBarButton
+        self.navigationItem.rightBarButtonItem = customView
+    }
+    
+//    func setNavigationBar() {
+//        
+//        if let navigationBar = self.navigationController?.navigationBar {
+//            let emptyImage = UIImage()
+//            navigationBar.backgroundColor = .kakaoWhite
+//            navigationBar.barTintColor = .kakaoWhite
+//            navigationBar.isTranslucent = false
+//            navigationBar.shadowImage = emptyImage
+//        }
+//        
+//        let backBarButton = UIBarButtonItem(image: .icNavigationLeftarrow1, style: .plain, target: self, action: nil)
+//        
+//        let bluetoothLabelButton = UIButton()
+//        bluetoothLabelButton.setImage(.icNavigationBluetoothbar, for: .normal)
+//        
+//        let bluetoothButton = UIButton()
+//        bluetoothButton.setImage(.icNavigationBluetooth, for: .normal)
+//        
+//        let moreButton = UIButton()
+//        moreButton.setImage(.icNavigationMore1, for: .normal)
+//        moreButton.snp.makeConstraints { $0.width.equalTo(20)}
+//        
+//        let stackView = UIStackView(arrangedSubviews: [bluetoothLabelButton, bluetoothButton, moreButton])
+//        stackView.axis = .horizontal
+//        stackView.spacing = 15
+//        stackView.alignment = .center
+//        stackView.distribution = .equalSpacing
+//        let customView = UIBarButtonItem(customView: stackView)
+//        
+//        self.navigationItem.leftBarButtonItem = backBarButton
+//        self.navigationItem.rightBarButtonItem = customView
+//        
+//    }
+    
     func setaddTarget() {
         rootView.closeButton.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
     }
