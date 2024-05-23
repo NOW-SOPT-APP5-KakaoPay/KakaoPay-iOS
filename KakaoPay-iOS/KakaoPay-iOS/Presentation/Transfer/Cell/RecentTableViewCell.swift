@@ -144,6 +144,7 @@ extension RecentTableViewCell {
         personName.text = forModel.name
         bankLabel.text = forModel.bank
         accountLabel.text = forModel.bankAccount
+        starButton.isSelected = forModel.bookmark
     }
     
     func checkBank(bank: String) -> UIImageView {
