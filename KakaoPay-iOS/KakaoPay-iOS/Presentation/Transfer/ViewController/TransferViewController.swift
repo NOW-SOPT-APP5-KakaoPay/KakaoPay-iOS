@@ -104,7 +104,6 @@ extension TransferViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-        print(section)
         switch section {
         case 0:
             guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: MyAccountHeaderView.className) as? MyAccountHeaderView else { return UITableViewHeaderFooterView() }
@@ -121,7 +120,7 @@ extension TransferViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 38
+        return 34
     }
 }
 extension TransferViewController: UIScrollViewDelegate {
