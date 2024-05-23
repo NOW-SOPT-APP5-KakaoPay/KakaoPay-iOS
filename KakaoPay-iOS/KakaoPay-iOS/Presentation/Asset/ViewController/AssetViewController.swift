@@ -40,9 +40,9 @@ final class AssetViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(false)
-        
         setNavigationBar()
         self.tabBarController?.tabBar.isHidden = false
+        changeStatusBarBgColor(statusBarColor: .kakaoGray200)
     }
 }
 

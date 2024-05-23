@@ -32,13 +32,24 @@ final class TransferViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = .kakaoWhite
+        
         setupDelegate()
         setupRegister()
         getRecentAccountHistoryAPI()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        self.tabBarController?.tabBar.isHidden = true
+        changeStatusBarBgColor(statusBarColor: .kakaoWhite)
+        setNavigationBar()
+    }
 }
 
 private extension TransferViewController {
+
     func setupDelegate() {
         rootView.transferTableView.delegate = self
         rootView.transferTableView.dataSource = self
@@ -54,6 +65,45 @@ private extension TransferViewController {
                                             forHeaderFooterViewReuseIdentifier: MyAccountHeaderView.className)
         rootView.transferTableView.register(RecentHeaderView.self,
                                             forHeaderFooterViewReuseIdentifier: RecentHeaderView.className)
+    }
+    
+    func setNavigationBar() {
+        
+        if let navigationBar = self.navigationController?.navigationBar {
+            let emptyImage = UIImage()
+            navigationBar.backgroundColor = .kakaoWhite
+            navigationBar.barTintColor = .kakaoWhite
+            navigationBar.isTranslucent = false
+            navigationBar.shadowImage = emptyImage
+        }
+        
+        let backBarButton = UIBarButtonItem(image: .icNavigationLeftarrow1, style: .plain, target: self, action: #selector(buttonTapped))
+        
+        let bluetoothLabelButton = UIButton()
+        bluetoothLabelButton.setImage(.icNavigationBluetoothbar, for: .normal)
+        
+        let bluetoothButton = UIButton()
+        bluetoothButton.setImage(.icNavigationBluetooth, for: .normal)
+        
+        let moreButton = UIButton()
+        moreButton.setImage(.icNavigationMore1, for: .normal)
+        moreButton.snp.makeConstraints { $0.width.equalTo(20)}
+        
+        let stackView = UIStackView(arrangedSubviews: [bluetoothLabelButton, bluetoothButton, moreButton])
+        stackView.axis = .horizontal
+        stackView.spacing = 15
+        stackView.alignment = .center
+        stackView.distribution = .equalSpacing
+        let customView = UIBarButtonItem(customView: stackView)
+        
+        self.navigationItem.leftBarButtonItem = backBarButton
+        self.navigationItem.rightBarButtonItem = customView
+        
+    }
+    
+    @objc
+    func buttonTapped() {
+        self.navigationController?.popViewController(animated: false)
     }
     
     func getRecentAccountHistoryAPI() {
