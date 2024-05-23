@@ -61,7 +61,10 @@ private extension TransferView {
     }
     
     func setHierarchy() {
-        addSubviews(transferTableView, headerView, qrButton, accountButton)
+        addSubviews(transferTableView, 
+                    headerView,
+                    qrButton,
+                    accountButton)
     }
     
     func setLayout() {

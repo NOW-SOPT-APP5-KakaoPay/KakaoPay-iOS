@@ -25,7 +25,7 @@ final class AccontCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-    
+        
         setupStyle()
         setupHierarchy()
         setupLayout()
@@ -41,7 +41,7 @@ final class AccontCell: UICollectionViewCell {
 extension AccontCell {
     
     //MARK: - Private Method
-
+    
     private func setupStyle() {
         backgroundColor = .kakaoWhite
         

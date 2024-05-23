@@ -35,7 +35,6 @@ final class HomePayMoneyCollectionViewCell: UICollectionViewCell {
 
 private extension HomePayMoneyCollectionViewCell {
     func setStyle() {
-      //  self.backgroundColor = .red
         image.image = .imgFirst
     }
     

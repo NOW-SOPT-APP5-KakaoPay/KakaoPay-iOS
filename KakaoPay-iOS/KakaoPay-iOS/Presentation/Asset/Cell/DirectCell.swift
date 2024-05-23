@@ -17,12 +17,12 @@ final class DirectCell: UICollectionViewCell {
     private let iconImageView = UIImageView()
     private let menuLabel = UILabel()
     private let arrowImageView = UIImageView()
-
+    
     // MARK: - Life Cycles
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-    
+        
         setupStyle()
         setupHierarchy()
         setupLayout()
@@ -54,11 +54,9 @@ extension DirectCell {
     }
     
     private func setupHierarchy() {
-        addSubviews(
-            iconImageView,
-            menuLabel,
-            arrowImageView
-        )
+        addSubviews(iconImageView,
+                    menuLabel,
+                    arrowImageView)
     }
     
     private func setupLayout() {
@@ -71,7 +69,7 @@ extension DirectCell {
             $0.centerY.equalToSuperview()
             $0.leading.equalTo(iconImageView.snp.trailing).offset(3)
         }
-    
+        
         arrowImageView.snp.makeConstraints {
             $0.centerY.equalToSuperview()
             $0.trailing.equalToSuperview().inset(7)

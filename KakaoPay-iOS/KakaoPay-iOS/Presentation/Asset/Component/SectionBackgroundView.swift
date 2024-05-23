@@ -7,9 +7,6 @@
 
 import UIKit
 
-import SnapKit
-import Then
-
 final class SectionBackgroundView: UICollectionReusableView {
     override func apply(_ layoutAttributes: UICollectionViewLayoutAttributes) {
         super.apply(layoutAttributes)

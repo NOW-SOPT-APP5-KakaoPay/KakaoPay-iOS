@@ -22,7 +22,7 @@ final class NewsCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-    
+        
         setupStyle()
         setupHierarchy()
         setupLayout()
@@ -55,7 +55,9 @@ extension NewsCell {
     }
     
     private func setupHierarchy() {
-        addSubviews(newsImage, discriptionLabel, mainLabel)
+        addSubviews(newsImage, 
+                    discriptionLabel,
+                    mainLabel)
     }
     
     private func setupLayout() {

@@ -18,12 +18,12 @@ final class PayIssueCell: UICollectionViewCell {
     private let discriptionLabel = UILabel()
     private let titleLabel = UILabel()
     private let labelStackView = UIStackView()
-
+    
     // MARK: - Life Cycles
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-    
+        
         setupStyle()
         setupHierarchy()
         setupLayout()

@@ -31,7 +31,7 @@ final class SpendingCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-    
+        
         setupStyle()
         setupHierarchy()
         setupLayout()
@@ -131,16 +131,15 @@ extension SpendingCell {
     }
     
     private func setupHierarchy() {
-        addSubviews(
-            titleLabel,
-            todayCaseLabel,
-            arrowImage,
-            dividerView,
-            analyzeMoneyImage,
-            labelStackView,
-            analysisButton,
-            usingCardView
-        )
+        addSubviews(titleLabel,
+                    todayCaseLabel,
+                    arrowImage,
+                    dividerView,
+                    analyzeMoneyImage,
+                    labelStackView,
+                    analysisButton,
+                    usingCardView)
+        
         labelStackView.addArrangedSubviews(whereLabel, spendingQuestionLabel)
         usingCardView.addSubviews(monthButton, usingCardQuestionLabel)
     }

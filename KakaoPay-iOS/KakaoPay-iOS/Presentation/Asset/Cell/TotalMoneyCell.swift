@@ -23,7 +23,7 @@ final class TotalMoneyCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-    
+        
         setupStyle()
         setupHierarchy()
         setupLayout()
@@ -39,7 +39,7 @@ final class TotalMoneyCell: UICollectionViewCell {
 extension TotalMoneyCell {
     
     //MARK: - Private Method
-
+    
     private func setupStyle() {
         backgroundColor = .kakaoYellow
         makeRounded(radius: 15)
