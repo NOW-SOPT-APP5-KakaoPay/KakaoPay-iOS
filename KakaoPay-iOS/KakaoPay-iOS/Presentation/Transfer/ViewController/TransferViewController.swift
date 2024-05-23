@@ -7,15 +7,17 @@
 
 import UIKit
 
+import SnapKit
+
 final class TransferViewController: UIViewController {
+    
+    // MARK: - Properties
     
     var recentAccountList: [GetHistoriesData]? {
         didSet{
             rootView.updateTableView()
         }
     }
-    
-    // MARK: - Properties
     
     private var transferData = TransferModel.dummy()
     
@@ -43,13 +45,17 @@ final class TransferViewController: UIViewController {
         super.viewWillAppear(animated)
 
         self.tabBarController?.tabBar.isHidden = true
-        changeStatusBarBgColor(statusBarColor: .kakaoWhite)
+        setupStyle()
         setNavigationBar()
     }
 }
 
 private extension TransferViewController {
-
+    
+    func setupStyle() {
+        changeStatusBarBgColor(statusBarColor: .kakaoWhite)
+    }
+    
     func setupDelegate() {
         rootView.transferTableView.delegate = self
         rootView.transferTableView.dataSource = self
@@ -98,30 +104,15 @@ private extension TransferViewController {
         
         self.navigationItem.leftBarButtonItem = backBarButton
         self.navigationItem.rightBarButtonItem = customView
-        
     }
     
     @objc
     func buttonTapped() {
         self.navigationController?.popViewController(animated: false)
     }
-    
-    func getRecentAccountHistoryAPI() {
-        HistoriesService.shared.getHistoriesAPI { response in
-            switch response {
-            case .success(let data):
-                guard let data = data as? GetHistoriesDTO else { return }
-                self.recentAccountList = data.data
-            default:
-                return
-            }
-        }
-    }
 }
 
-extension TransferViewController: UITableViewDelegate {
-    
-}
+extension TransferViewController: UITableViewDelegate {}
 
 extension TransferViewController: UITableViewDataSource {
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -143,6 +134,7 @@ extension TransferViewController: UITableViewDataSource {
             guard let cell = tableView.dequeueReusableCell(withIdentifier: MyAccountTableViewCell.className, for: indexPath) as? MyAccountTableViewCell else { return UITableViewCell() }
             cell.selectionStyle = UITableViewCell.SelectionStyle.none
             return cell
+            
         default:
             guard let cell = tableView.dequeueReusableCell(withIdentifier: RecentTableViewCell.className, for: indexPath) as? RecentTableViewCell else { return UITableViewCell() }
             cell.selectionStyle = UITableViewCell.SelectionStyle.none
@@ -158,11 +150,11 @@ extension TransferViewController: UITableViewDataSource {
         case 0:
             guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: MyAccountHeaderView.className) as? MyAccountHeaderView else { return UITableViewHeaderFooterView() }
             return header
+            
         default:
             guard let header = tableView.dequeueReusableHeaderFooterView(withIdentifier: RecentHeaderView.className) as? RecentHeaderView else { return UITableViewHeaderFooterView() }
             return header
         }
-        
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
@@ -173,9 +165,26 @@ extension TransferViewController: UITableViewDataSource {
         return 34
     }
 }
+
 extension TransferViewController: UIScrollViewDelegate {
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
         let navigationBarHidden = scrollView.contentOffset.y > 0
         self.navigationController?.setNavigationBarHidden(navigationBarHidden, animated: false)
+    }
+}
+
+// MARK: - Network
+
+private extension TransferViewController {
+    func getRecentAccountHistoryAPI() {
+        HistoriesService.shared.getHistoriesAPI { response in
+            switch response {
+            case .success(let data):
+                guard let data = data as? GetHistoriesDTO else { return }
+                self.recentAccountList = data.data
+            default:
+                return
+            }
+        }
     }
 }
