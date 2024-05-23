@@ -22,10 +22,20 @@ final class HomeViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        view.backgroundColor = .kakaoGray200
+        
         setDelegate()
         setRegister()
         setaddTarget()
     }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(false)
+        
+        setNavigationBar()
+        self.tabBarController?.tabBar.isHidden = false
+    }
+    
 }
 
 private extension HomeViewController {
@@ -71,15 +81,35 @@ private extension HomeViewController {
         rootView.collectionView.register(HomeBottomCollectionViewCell.self,
                                          forCellWithReuseIdentifier: HomeBottomCollectionViewCell.className)
     }
+    
+    func setNavigationBar() {
+        
+        if let navigationBar = self.navigationController?.navigationBar {
+            let emptyImage = UIImage()
+            navigationBar.backgroundColor = .kakaoGray200
+            navigationBar.barTintColor = .kakaoGray200
+            navigationBar.isTranslucent = false
+            navigationBar.shadowImage = emptyImage
+            navigationBar.tintColor = .kakaoBlack
+        }
+        
+        let mainBarButton = UIBarButtonItem(image: .icNavigationKakaopay, style: .plain, target: self, action: nil)
+        let searchBarButton = UIBarButtonItem(image: .icNavigationSearch, style: .plain, target: self, action: nil)
+        let alarmBarButton = UIBarButtonItem(image: .icNavigationAlarm, style: .plain, target: self, action: nil)
+        let settingBarButton = UIBarButtonItem(image: .icNavigationSetting, style: .plain, target: self, action: nil)
+        
+        self.navigationItem.leftBarButtonItem = mainBarButton
+        self.navigationItem.rightBarButtonItems = [searchBarButton, alarmBarButton, settingBarButton]
+    }
 }
 
 extension HomeViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-            if indexPath.item == 0 { // 0번째 셀인지 확인
-                let detailViewController = TransferViewController()
-                self.navigationController?.pushViewController(detailViewController, animated: false)
-            }
+        if indexPath.item == 0 { // 0번째 셀인지 확인
+            let detailViewController = TransferViewController()
+            self.navigationController?.pushViewController(detailViewController, animated: false)
         }
+    }
 }
 
 extension HomeViewController: UICollectionViewDataSource {

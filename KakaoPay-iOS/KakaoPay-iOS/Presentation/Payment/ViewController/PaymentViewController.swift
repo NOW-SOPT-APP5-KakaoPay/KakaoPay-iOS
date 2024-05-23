@@ -21,12 +21,16 @@ final class PaymentViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        setaddTarget()
+        self.view.backgroundColor = .kakaoYellow
         
+        setNavigationBar()
+        setaddTarget()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
+        
+        self.tabBarController?.tabBar.isHidden = true
         
         getPayPointAPI()
         getPayMoneyAPI()
@@ -34,6 +38,24 @@ final class PaymentViewController: UIViewController {
 }
 
 private extension PaymentViewController {
+    func setNavigationBar() {
+        if let navigationBar = self.navigationController?.navigationBar {
+            let emptyImage = UIImage()
+            navigationBar.backgroundColor = .kakaoYellow
+            navigationBar.barTintColor = .kakaoYellow
+            navigationBar.isTranslucent = false
+            navigationBar.shadowImage = emptyImage
+            navigationBar.tintColor = .kakaoBlack
+        }
+        
+        let mainBarButton = UIBarButtonItem(image: .icNavigationKakaopay, style: .plain, target: self, action: nil)
+        let worldPayBarButton = UIBarButtonItem(image: .icNavigationWorldpay, style: .done, target: self, action: nil)
+        let settingBarButton = UIBarButtonItem(image: .icNavigationSetting, style: .plain, target: self, action: nil)
+        
+        self.navigationItem.leftBarButtonItem = mainBarButton
+        self.navigationItem.rightBarButtonItems = [settingBarButton, worldPayBarButton]
+    }
+    
     func setaddTarget() {
         rootView.closeButton.addTarget(self, action: #selector(tappedButton), for: .touchUpInside)
     }

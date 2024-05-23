@@ -8,41 +8,69 @@
 import UIKit
 
 final class AssetViewController: UIViewController {
-
+    
     // MARK: - Properties
     
     private let rootView = AssetView()
     
-     var totalMoneyModelData = GetBalanceData(balance: "") {
-         didSet{
-             rootView.assetCollectionView.reloadData()
-         }
+    var totalMoneyModelData = GetBalanceData(balance: "") {
+        didSet{
+            rootView.assetCollectionView.reloadData()
+        }
     }
     private let newsModelDateList = NewsModel.dummy()
     private let investmentAndLoanModelDataList = InvestmentAndLoanModel.dummy()
     private let payIssueModelDataList = PayIssueModel.dummy()
     private let directModelDataList = DirectModel.dummy()
-
+    
     // MARK: - Life Cycles
-
+    
     override func loadView() {
         self.view = rootView
     }
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
+        view.backgroundColor = .kakaoGray200
+        
         setupDelegate()
         getBalanceAPI()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(false)
+        
+        setNavigationBar()
+        self.tabBarController?.tabBar.isHidden = false
     }
 }
 
 extension AssetViewController {
     
     //MARK: - Private Method
-
+    
     private func setupDelegate() {
         rootView.setupCollectionView(self)
+    }
+    
+    func setNavigationBar() {
+        if let navigationBar = self.navigationController?.navigationBar {
+            let emptyImage = UIImage()
+            navigationBar.backgroundColor = .kakaoGray200
+            navigationBar.barTintColor = .kakaoGray200
+            navigationBar.isTranslucent = false
+            navigationBar.shadowImage = emptyImage
+            navigationBar.tintColor = .kakaoBlack
+        }
+        
+        let mainBarButton = UIBarButtonItem(image: .icNavigationKakaopay, style: .plain, target: self, action: nil)
+        let searchBarButton = UIBarButtonItem(image: .icNavigationSearch, style: .plain, target: self, action: nil)
+        let alarmBarButton = UIBarButtonItem(image: .icNavigationAlarm, style: .plain, target: self, action: nil)
+        let settingBarButton = UIBarButtonItem(image: .icNavigationSetting, style: .plain, target: self, action: nil)
+        
+        self.navigationItem.leftBarButtonItem = mainBarButton
+        self.navigationItem.rightBarButtonItems = [searchBarButton, alarmBarButton, settingBarButton]
     }
 }
 
