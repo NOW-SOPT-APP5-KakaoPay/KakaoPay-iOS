@@ -21,13 +21,26 @@ final class HomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        
         setDelegate()
         setRegister()
+        setaddTarget()
     }
 }
 
 private extension HomeViewController {
+    
+    func setaddTarget() {
+        rootView.payButton.addTarget(self, action: #selector(tapped), for: .touchUpInside)
+    }
+    
+    
+    @objc
+    func tapped(){
+        let vc = PaymentViewController()
+        navigationController?.pushViewController(vc, animated: false)
+    }
+    
     func setDelegate() {
         rootView.collectionView.delegate = self
         rootView.collectionView.dataSource = self
@@ -61,7 +74,12 @@ private extension HomeViewController {
 }
 
 extension HomeViewController: UICollectionViewDelegate {
-    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+            if indexPath.item == 0 { // 0번째 셀인지 확인
+                let detailViewController = TransferViewController()
+                self.navigationController?.pushViewController(detailViewController, animated: false)
+            }
+        }
 }
 
 extension HomeViewController: UICollectionViewDataSource {
@@ -117,7 +135,6 @@ extension HomeViewController: UICollectionViewDataSource {
         }
     }
     
-    
 }
 
 extension HomeViewController: UICollectionViewDelegateFlowLayout {
@@ -137,7 +154,7 @@ extension HomeViewController: UICollectionViewDelegateFlowLayout {
             return CGSize(width: 345, height: 147)
         case 6:
             return CGSize(width: 345, height: 167)
-        
+            
         default:
             return CGSize(width: 345, height: 74)
         }

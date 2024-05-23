@@ -14,6 +14,8 @@ final class HomeView: UIView {
     
     // MARK: - UI Components
     
+    private let customTabBar = CustomTabBar()
+    
     let collectionView: UICollectionView = {
         let layout = UICollectionViewFlowLayout()
         layout.scrollDirection = .vertical
@@ -23,10 +25,8 @@ final class HomeView: UIView {
         return cv
     }()
     
-//    private let personalLabel = UILabel()
-//    private let customerCenterLabel = UILabel()
-//    private let reportLabel = UILabel()
-
+    let payButton = UIButton()
+    
     // MARK: - Life Cycles
     
     override init(frame: CGRect) {
@@ -48,33 +48,28 @@ final class HomeView: UIView {
 private extension HomeView {
     func setStyle() {
         collectionView.backgroundColor = .kakaoGray200
-//        
-//        personalLabel.do {
-//            $0.text = "개인정보처리방침"
-//            $0.font = .appleRegular(size: 14)
-//            $0.textColor = .kakaoGray600
-//        }
-//        
-//        customerCenterLabel.do {
-//            $0.text = "고객센터"
-//            $0.font = .appleRegular(size: 14)
-//            $0.textColor = .kakaoGray600
-//        }
-//        
-//        reportLabel.do {
-//            $0.text = "신고하기"
-//            $0.font = .appleRegular(size: 14)
-//            $0.textColor = .kakaoGray600
-//        }
+        payButton.do {
+            $0.setTitle("현장 결제", for: .normal)
+            $0.setTitleColor(.kakaoBlack, for: .normal)
+            $0.backgroundColor = .kakaoYellow
+            $0.titleLabel?.font = .appleSemiBold(size: 16)
+        }
     }
     
     func setHierarchy() {
-        addSubview(collectionView)
+        addSubviews(collectionView, payButton)
     }
     
     func setLayout() {
         collectionView.snp.makeConstraints {
-            $0.top.bottom.horizontalEdges.equalToSuperview()
+            $0.top.horizontalEdges.equalToSuperview()
+            $0.bottom.equalToSuperview().inset(144)
+            $0.width.equalTo(UIScreen.main.bounds.width)
+        }
+        
+        payButton.snp.makeConstraints {
+            $0.bottom.equalToSuperview().inset(94)
+            $0.height.equalTo(50)
             $0.width.equalTo(UIScreen.main.bounds.width)
         }
     }
