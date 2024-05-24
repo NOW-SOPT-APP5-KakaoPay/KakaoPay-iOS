@@ -49,7 +49,8 @@ private extension HomeView {
     func setStyle() {
         collectionView.backgroundColor = .kakaoGray200
         payButton.do {
-            $0.setTitle("현장 결제", for: .normal)
+            $0.setTitle(" 현장 결제", for: .normal)
+            $0.setImage(.icQrscan, for: .normal)
             $0.setTitleColor(.kakaoBlack, for: .normal)
             $0.backgroundColor = .kakaoYellow
             $0.titleLabel?.font = .appleSemiBold(size: 16)
