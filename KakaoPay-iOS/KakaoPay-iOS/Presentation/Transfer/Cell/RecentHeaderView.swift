@@ -12,7 +12,7 @@ import Then
 
 final class RecentHeaderView: UITableViewHeaderFooterView {
     
-    // MARK: - UIComponent
+    // MARK: - UI Component
     
     private let recentLabel = UILabel()
     

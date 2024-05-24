@@ -24,7 +24,7 @@ final class investmentAndLoanCell: UICollectionViewCell {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-    
+        
         setupStyle()
         setupHierarchy()
         setupLayout()
@@ -102,7 +102,7 @@ extension investmentAndLoanCell {
         titleLabel.text = data.title
         discriptionLabel.text = data.discription
     }
-
+    
     func configureCellWithHightlightText(data: InvestmentAndLoanModel, hightlightText: String) {
         imageView.image = data.image
         titleLabel.text = data.title

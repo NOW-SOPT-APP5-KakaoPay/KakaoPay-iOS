@@ -44,7 +44,6 @@
 		8360DA852BF22D6F002CABBC /* MyAccountHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA842BF22D6F002CABBC /* MyAccountHeaderView.swift */; };
 		8360DA872BF22D7B002CABBC /* RecentHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA862BF22D7B002CABBC /* RecentHeaderView.swift */; };
 		8360DA8A2BF25FF3002CABBC /* TransferModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA892BF25FF3002CABBC /* TransferModel.swift */; };
-		8360DA902BF3C2BA002CABBC /* PaymentModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA8F2BF3C2BA002CABBC /* PaymentModel.swift */; };
 		8360DA922BF3C2C4002CABBC /* PaymentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA912BF3C2C4002CABBC /* PaymentView.swift */; };
 		8360DA942BF3C2CE002CABBC /* PaymentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8360DA932BF3C2CE002CABBC /* PaymentViewController.swift */; };
 		836814E82BFDB3B800472A0B /* MoyaPlugin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 836814E72BFDB3B800472A0B /* MoyaPlugin.swift */; };
@@ -132,7 +131,6 @@
 		8360DA842BF22D6F002CABBC /* MyAccountHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyAccountHeaderView.swift; sourceTree = "<group>"; };
 		8360DA862BF22D7B002CABBC /* RecentHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecentHeaderView.swift; sourceTree = "<group>"; };
 		8360DA892BF25FF3002CABBC /* TransferModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransferModel.swift; sourceTree = "<group>"; };
-		8360DA8F2BF3C2BA002CABBC /* PaymentModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentModel.swift; sourceTree = "<group>"; };
 		8360DA912BF3C2C4002CABBC /* PaymentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentView.swift; sourceTree = "<group>"; };
 		8360DA932BF3C2CE002CABBC /* PaymentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewController.swift; sourceTree = "<group>"; };
 		836814E72BFDB3B800472A0B /* MoyaPlugin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoyaPlugin.swift; sourceTree = "<group>"; };
@@ -457,7 +455,6 @@
 		8360DA8B2BF3C248002CABBC /* Payment */ = {
 			isa = PBXGroup;
 			children = (
-				8360DA8E2BF3C29D002CABBC /* Model */,
 				8360DA8D2BF3C295002CABBC /* View */,
 				8360DA8C2BF3C278002CABBC /* ViewController */,
 			);
@@ -480,14 +477,6 @@
 				83E327C02BF5CFA400C7891C /* CustomDivideView.swift */,
 			);
 			path = View;
-			sourceTree = "<group>";
-		};
-		8360DA8E2BF3C29D002CABBC /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				8360DA8F2BF3C2BA002CABBC /* PaymentModel.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		836814E92BFDB51300472A0B /* DTO */ = {
@@ -692,7 +681,6 @@
 				D083F0712BF57A7E00128DA1 /* NewsCell.swift in Sources */,
 				8360DA852BF22D6F002CABBC /* MyAccountHeaderView.swift in Sources */,
 				83474AC92BEE68DC009B9C48 /* UIButton+.swift in Sources */,
-				8360DA902BF3C2BA002CABBC /* PaymentModel.swift in Sources */,
 				8368150E2BFE364C00472A0B /* HomeMenuCollectionViewCell.swift in Sources */,
 				83474AAF2BEE6631009B9C48 /* NetworkResult.swift in Sources */,
 				83474A7F2BEE6160009B9C48 /* ViewController.swift in Sources */,

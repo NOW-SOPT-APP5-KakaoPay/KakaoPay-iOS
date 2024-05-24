@@ -11,9 +11,9 @@ import SnapKit
 import Then
 
 final class AccountFooterView: UICollectionReusableView {
-
-    // MARK: - UIComponent
-
+    
+    // MARK: - UI Component
+    
     private let pointMoneyLabel = UILabel()
     private let moneyLabel = UILabel()
     private let arrowButton = UIButton()
@@ -22,12 +22,12 @@ final class AccountFooterView: UICollectionReusableView {
     
     override init(frame: CGRect) {
         super.init(frame: frame)
-
+        
         setupStyle()
         setupHierarchy()
         setupLayout()
     }
-
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -38,7 +38,7 @@ final class AccountFooterView: UICollectionReusableView {
 extension AccountFooterView {
     
     //MARK: - Private Method
-
+    
     private func setupStyle() {
         backgroundColor = .kakaoWhite
         makeRounded(radius: 15)
@@ -64,11 +64,9 @@ extension AccountFooterView {
     }
     
     private func setupHierarchy() {
-        addSubviews(
-            pointMoneyLabel,
-            moneyLabel,
-            arrowButton
-        )
+        addSubviews(pointMoneyLabel,
+                    moneyLabel,
+                    arrowButton)
     }
     
     private func setupLayout() {

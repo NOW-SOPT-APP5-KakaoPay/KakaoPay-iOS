@@ -18,6 +18,7 @@ final class AssetViewController: UIViewController {
             rootView.assetCollectionView.reloadData()
         }
     }
+    
     private let newsModelDateList = NewsModel.dummy()
     private let investmentAndLoanModelDataList = InvestmentAndLoanModel.dummy()
     private let payIssueModelDataList = PayIssueModel.dummy()
@@ -40,6 +41,7 @@ final class AssetViewController: UIViewController {
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(false)
+        
         setNavigationBar()
         self.tabBarController?.tabBar.isHidden = false
         changeStatusBarBgColor(statusBarColor: .kakaoGray200)

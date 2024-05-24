@@ -111,30 +111,6 @@ private extension RecentTableViewCell {
 
 extension RecentTableViewCell {
     
-    //MARK: - Private Method
-    
-    private func postBookmarkAPI() {
-        BookmarkService.shared.postBookmarkAPI(bank: recentAccountlist.first?.bank ?? "", bankAccount: recentAccountlist.first?.bankAccount ?? "") { response in
-            switch response {
-            case .success(let data):
-                print("Succese")
-            default:
-                return
-            }
-        }
-    }
-    
-    private func deleteBookmarkAPI() {
-        BookmarkService.shared.deleteBookmarkAPI(bank: recentAccountlist.first?.bank ?? "", bankAccount: recentAccountlist.first?.bankAccount ?? "") { response in
-            switch response {
-            case .success(let data):
-                print("Succese")
-            default:
-                return
-            }
-        }
-    }
-    
     //MARK: - Method
     
     func bindData(forModel: GetHistoriesData) {
@@ -169,4 +145,26 @@ extension RecentTableViewCell {
     }
 }
 
-
+private extension RecentTableViewCell {
+    func postBookmarkAPI() {
+        BookmarkService.shared.postBookmarkAPI(bank: recentAccountlist.first?.bank ?? "", bankAccount: recentAccountlist.first?.bankAccount ?? "") { response in
+            switch response {
+            case .success(_):
+                print("Success")
+            default:
+                return
+            }
+        }
+    }
+    
+    func deleteBookmarkAPI() {
+        BookmarkService.shared.deleteBookmarkAPI(bank: recentAccountlist.first?.bank ?? "", bankAccount: recentAccountlist.first?.bankAccount ?? "") { response in
+            switch response {
+            case .success(_):
+                print("Success")
+            default:
+                return
+            }
+        }
+    }
+}

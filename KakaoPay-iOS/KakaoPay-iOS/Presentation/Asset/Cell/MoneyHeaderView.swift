@@ -11,22 +11,22 @@ import SnapKit
 import Then
 
 final class MoneyHeaderView: UICollectionReusableView {
-
-    // MARK: - UIComponent
-
+    
+    // MARK: - UI Component
+    
     private let titleLabel = UILabel()
     private let moreView = MoreView()
-
+    
     // MARK: - Life Cycle
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
-
+        
         setupStyle()
         setupHierarchy()
         setupLayout()
     }
-
+    
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
@@ -35,7 +35,7 @@ final class MoneyHeaderView: UICollectionReusableView {
 extension MoneyHeaderView {
     
     //MARK: - Private Method
-
+    
     private func setupStyle() {
         backgroundColor = .kakaoWhite
         makeRounded(radius: 15)
@@ -46,11 +46,11 @@ extension MoneyHeaderView {
             $0.textAlignment = .center
         }
     }
-
+    
     private func setupHierarchy() {
         addSubviews(titleLabel, moreView)
     }
-
+    
     private func setupLayout() {
         titleLabel.snp.makeConstraints {
             $0.top.equalToSuperview().inset(24)
